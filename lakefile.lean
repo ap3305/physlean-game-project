@@ -51,6 +51,7 @@ require "leanprover-community" / mathlib @ git leanVersion
 ```
  -/
 
+require PhysLean from git "https://github.com/HEPLean/PhysLean" @ "v4.23.0"
 -- require "leanprover-community" / mathlib @ git leanVersion
 
 /-!

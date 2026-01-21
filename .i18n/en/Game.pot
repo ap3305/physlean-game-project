@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-23\n"
+"POT-Creation-Date: 2026-01-21\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -10,10 +10,6 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "Hello World"
 msgstr ""
 
 #: Game
@@ -29,9 +25,8 @@ msgstr ""
 msgid "Hello World Game"
 msgstr ""
 
-#. §0: `«{g}»`
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use §0 now."
+#: Game.Levels.UnitWorld.L01_HelloWorld
+msgid "Back to Basics"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -40,6 +35,12 @@ msgstr ""
 
 #: Game
 msgid "You should use this game as a template for your own game and add your own levels."
+msgstr ""
+
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+msgid "some description"
 msgstr ""
 
 #: Game
@@ -51,28 +52,26 @@ msgid "Here you can put additional information about the game. It is accessible\
 "Use **markdown**."
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
+#: Game.Levels.UnitWorld.L01_HelloWorld
 msgid "This last message appears if the level is solved."
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.\n"
-"You can insert hints in the proof below. They will appear in this side panel\n"
-"depending on the proof a user provides."
+#: Game.Levels.UnitWorld.L01_HelloWorld
+msgid "Introduce what a dimension is and rw and rfl"
 msgstr ""
 
-#: Game.Levels.DemoWorld
+#: Game.Levels.UnitWorld
 msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
 msgstr ""
 
-#. §0: `«{h}»`
-#. §1: `«{g}»`
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using §0 or §1."
+#. §0: `rw[h]`
+#. §1: `rfl`
+#: Game.Levels.UnitWorld.L01_HelloWorld
+msgid "Start with §0 to use the assumption then §1 to complete the goal"
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "Demo World"
+#: Game.Levels.UnitWorld
+msgid "Unit World"
 msgstr ""
 
 #: Game
