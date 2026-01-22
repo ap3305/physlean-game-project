@@ -1,4 +1,4 @@
-import Game.Levels.UnitWorld.L01_HelloWorld
+import Game.Levels.UnitWorld.L01_Area
 
 World "UnitWorld"
 Title "Unit World"
