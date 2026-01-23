@@ -1,4 +1,6 @@
 import Game.Levels.UnitWorld.L01_Area
+import Game.Levels.UnitWorld.L02_Velocity
+import Game.Levels.UnitWorld.L03_Energy
 
 World "UnitWorld"
 Title "Unit World"

@@ -13,9 +13,24 @@ TacticDoc rfl
 /--
 some description
 -/
-DefinitionDoc Area as "A"
+TacticDoc all_goals
+
+/--
+some description
+-/
+TacticDoc ext
+
+/--
+some description
+-/
+TacticDoc simp
+
+/--
+some description
+-/
+DefinitionDoc AreaDim as "Area"
 
 /--
 Type Dimension with .length = 1
 -/
-DefinitionDoc Length as "L"
+DefinitionDoc LengthDim as "Length"
