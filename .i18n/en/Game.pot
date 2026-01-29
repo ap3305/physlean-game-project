@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-21\n"
+"POT-Creation-Date: 2026-01-29\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -17,16 +17,25 @@ msgid "This text appears on the starting page where one selects the world/level 
 "You can use **markdown**."
 msgstr ""
 
+#: Game.Levels.SpaceWorld.L01_Begin
+msgid "Humble Beginnings"
+msgstr ""
+
+#: Game.Levels.SpaceWorld.L01_Begin
+#: Game.Levels.SpaceWorld.L02_Zero
+#: Game.Levels.SpaceWorld.L02_Zero
+#: Game.Levels.SpaceWorld.L02_Zero
+#: Game.Levels.SpaceWorld.L03_Comm
+#: Game.Levels.SpaceWorld.L03_Comm
+msgid ""
+msgstr ""
+
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
 #: Game
 msgid "Hello World Game"
-msgstr ""
-
-#: Game.Levels.UnitWorld.L01_HelloWorld
-msgid "Back to Basics"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -37,6 +46,8 @@ msgstr ""
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
 
+#: Game.TheoremDocs
+#: Game.TheoremDocs
 #: Game.TheoremDocs
 #: Game.TheoremDocs
 #: Game.TheoremDocs
@@ -52,26 +63,36 @@ msgid "Here you can put additional information about the game. It is accessible\
 "Use **markdown**."
 msgstr ""
 
-#: Game.Levels.UnitWorld.L01_HelloWorld
-msgid "This last message appears if the level is solved."
+#. §0: `Space (d : ℕ)`
+#. §1: `abbrev space : Type := Space 3`
+#. §2: `Space`
+#. §3: `![a, b, ...]`
+#. §4: `space.x`
+#. §5: `space.y`
+#. §6: `space.z`
+#. §7: `x_val`
+#. §8: `y_val`
+#. §9: `z_val`
+#. §10: `![x, y, z]`
+#: Game.Levels.SpaceWorld.L01_Begin
+msgid "In Physlean, §0 is a type representing a d-dimensional space. In this world we are specifically working with 3 dimensions so we define §1. This locks us into working in three dimensions whilst maintaing access to all of the results Physlean provides about §2.\n"
+"Mathlib provides us with notation for creating vectors of any length using the constructor §3.\n"
+"We addionally define §4, §5, and §6 and three lemmas §7, §8, and §9 equating them to the values §10, use this level to familarise yourself with all of this notation."
 msgstr ""
 
-#: Game.Levels.UnitWorld.L01_HelloWorld
-msgid "Introduce what a dimension is and rw and rfl"
+#. §0: `u • u ≥ 0`
+#. §1: `u`
+#: Game.Levels.SpaceWorld
+msgid "Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors.\n"
+"The final level of this world will have you prove that §0. That is, the dot product of a vector §1 with itself is never negative."
 msgstr ""
 
-#: Game.Levels.UnitWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
+#: Game.Levels.SpaceWorld
+msgid "Space World"
 msgstr ""
 
-#. §0: `rw[h]`
-#. §1: `rfl`
-#: Game.Levels.UnitWorld.L01_HelloWorld
-msgid "Start with §0 to use the assumption then §1 to complete the goal"
-msgstr ""
-
-#: Game.Levels.UnitWorld
-msgid "Unit World"
+#: Game.Levels.SpaceWorld.L03_Comm
+msgid "Back and Forth"
 msgstr ""
 
 #: Game

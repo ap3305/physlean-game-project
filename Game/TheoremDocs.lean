@@ -24,13 +24,3 @@ TacticDoc ext
 some description
 -/
 TacticDoc simp
-
-/--
-some description
--/
-DefinitionDoc AreaDim as "Area"
-
-/--
-Type Dimension with .length = 1
--/
-DefinitionDoc LengthDim as "Length"
