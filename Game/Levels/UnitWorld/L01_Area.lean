@@ -12,7 +12,7 @@ Title "πr^2"
 
 Introduction "Introduce what a dimension is and simp?"
 
-Statement (AreaDim : Dimension) (h : AreaDim = _root_.LengthDim ^ 2) : AreaDim.length = 2 := by
+Statement (AreaDim : Dimension) (h : AreaDim = LengthDim ^ 2) : AreaDim.length = 2 := by
   Hint "Use `rw [h]` to substitute."
   rw [h]
   Hint "Use `simp` to let Lean prove this for you, this works because PhysLean has already defined what it means to take a power of a dimension."

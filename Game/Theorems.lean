@@ -1,6 +1,7 @@
 import GameServer
 import PhysLean.Units.Dimension
 import PhysLean.Units.UnitDependent
+import Physlean.Units.WithDim.Basic
 
 def LengthDim : Dimension := ⟨1, 0, 0, 0, 0⟩
 def TimeDim : Dimension := ⟨0, 1, 0, 0, 0⟩
