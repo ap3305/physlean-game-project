@@ -23,4 +23,4 @@ Statement (u v : space) (h : u = ![1, 2, 3]) (g : v = ![3, 4, 5]) : u + v = v + 
 Conclusion ""
 
 NewTactic ext all_goals
-NewDefinition vector_add_zero
+NewTheorem vector_add_zero

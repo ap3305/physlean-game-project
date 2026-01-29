@@ -51,6 +51,12 @@ msgstr ""
 #: Game.TheoremDocs
 #: Game.TheoremDocs
 #: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
+#: Game.TheoremDocs
 msgid "some description"
 msgstr ""
 

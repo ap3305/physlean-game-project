@@ -23,5 +23,8 @@ Statement (u v : space) (h : u = ![1, 2, 3]) (g : v = ![3, 4, 5]) : u.x + v.z = 
 
 Conclusion ""
 
+NewTheorem x_val y_val z_val
 NewTactic rw simp ring
-NewDefinition x_val y_val z_val
+NewDefinition space
+
+NewHiddenTactic rewrite nth_rewrite rwa
