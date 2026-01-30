@@ -27,4 +27,4 @@ NewTheorem x_val y_val z_val
 NewTactic rw simp ring
 NewDefinition space
 
-NewHiddenTactic rewrite nth_rewrite rwa
+NewHiddenTactic rewrite nth_rewrite rwa repeat
