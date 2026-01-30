@@ -77,3 +77,8 @@ TheoremDoc vector_add_zero as "vector_add_zero" in "Space"
 some description
 -/
 DefinitionDoc space as "space"
+
+/--
+some description
+-/
+DefinitionDoc dot_product as "•"

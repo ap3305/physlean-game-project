@@ -12,19 +12,22 @@ namespace space
 
 @[ext]
 lemma space_ext (u v : space) (hx : u.x = v.x) (hy : u.y = v.y) (hz : u.z = v.z) : u = v := by
-  funext i
-  fin_cases i
-  exact hx
-  exact hy
-  exact hz
+  funext
+  fin_cases x
+  all_goals assumption
+
+@[simp]
+def dot_product (u v : space) := u.x * v.x + u.y * v.y + u.z * v.z
+
+infix:100 " • " => dot_product
 
 end space
 
 @[simp]
-lemma x_val (a : ℝ) (t : Fin 2 → ℝ) : space.x (Matrix.vecCons a t : space) = a := by
+lemma x_val (a : ℝ) (bc : Fin 2 → ℝ) : space.x (Matrix.vecCons a bc : space) = a := by
   simp
 @[simp]
-lemma y_val (a b : ℝ) (t : Fin 1 → ℝ) : space.y (Matrix.vecCons a (Matrix.vecCons b t)) = b := by
+lemma y_val (a b : ℝ) (c : Fin 1 → ℝ) : space.y (Matrix.vecCons a (Matrix.vecCons b c)) = b := by
   simp
 @[simp]
 lemma z_val (a b c : ℝ) : space.z (Matrix.vecCons a (Matrix.vecCons b (Matrix.vecCons c Matrix.vecEmpty))) = c := by
