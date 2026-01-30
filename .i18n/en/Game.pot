@@ -27,6 +27,8 @@ msgstr ""
 #: Game.Levels.SpaceWorld.L02_Zero
 #: Game.Levels.SpaceWorld.L03_Comm
 #: Game.Levels.SpaceWorld.L03_Comm
+#: Game.Levels.SpaceWorld.L04_Dot
+#: Game.Levels.SpaceWorld.L04_Dot
 msgid ""
 msgstr ""
 
@@ -46,6 +48,21 @@ msgstr ""
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
 
+#. §0: `dot_product`
+#. §1: `infix:100 \" • \" => dot_product`
+#: Game.Levels.SpaceWorld.L04_Dot
+msgid "Define §0, make notation for it using §1, 100 is precedence."
+msgstr ""
+
+#: Game
+msgid "Here you can put additional information about the game. It is accessible\n"
+"from the starting through the drop-down menu.\n"
+"\n"
+"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"\n"
+"Use **markdown**."
+msgstr ""
+
 #: Game.TheoremDocs
 #: Game.TheoremDocs
 #: Game.TheoremDocs
@@ -59,15 +76,6 @@ msgstr ""
 #: Game.TheoremDocs
 #: Game.TheoremDocs
 msgid "some description"
-msgstr ""
-
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
-"\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
-"\n"
-"Use **markdown**."
 msgstr ""
 
 #. §0: `Space (d : ℕ)`

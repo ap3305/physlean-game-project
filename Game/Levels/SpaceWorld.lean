@@ -1,6 +1,7 @@
 import Game.Levels.SpaceWorld.L01_Begin
 import Game.Levels.SpaceWorld.L02_Zero
 import Game.Levels.SpaceWorld.L03_Comm
+import Game.Levels.SpaceWorld.L04_Dot
 
 World "SpaceWorld"
 Title "Space World"

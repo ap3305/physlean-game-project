@@ -1,6 +1,6 @@
 import GameServer
 import Mathlib.Data.Fin.VecNotation
-import PhysLean.SpaceAndTime.space.Basic
+import PhysLean.SpaceAndTime.Space.Basic
 
 abbrev space : Type := Space
 
