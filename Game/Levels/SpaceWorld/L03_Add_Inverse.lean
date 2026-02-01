@@ -7,18 +7,16 @@ import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Analysis.InnerProductSpace.Basic
 
 World "SpaceWorld"
-Level 2
+Level 3
 
 Title ""
 
-Introduction ""
+Introduction "Define `dot_product`, make notation for it using `infix:100 \" • \" => dot_product`, 100 is precedence."
 
-Statement (u : space) (h : u = ![1, 2, 3]) : u + 0 = u := by
+Statement (u : space) (h : u = ![1, 2, 3]) : u + (-u) = 0 := by
   rw [h]
   ext
   all_goals
     simp
 
 Conclusion ""
-
-NewTactic ext all_goals

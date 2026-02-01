@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30\n"
+"POT-Creation-Date: 2026-01-31\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -91,7 +91,9 @@ msgstr ""
 #. §10: `![x, y, z]`
 #: Game.Levels.SpaceWorld.L01_Begin
 msgid "In Physlean, §0 is a type representing a d-dimensional space. In this world we are specifically working with 3 dimensions so we define §1. This locks us into working in three dimensions whilst maintaing access to all of the results Physlean provides about §2.\n"
+"\n"
 "Mathlib provides us with notation for creating vectors of any length using the constructor §3.\n"
+"\n"
 "We addionally define §4, §5, and §6 and three lemmas §7, §8, and §9 equating them to the values §10, use this level to familarise yourself with all of this notation."
 msgstr ""
 
