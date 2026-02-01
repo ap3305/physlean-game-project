@@ -1,5 +1,5 @@
 import GameServer
-import Game.Theorems
+import Game.Theorems.Space.Theorems
 
 /--
 some description
@@ -81,4 +81,4 @@ DefinitionDoc space as "space"
 /--
 some description
 -/
-DefinitionDoc dot_product as "•"
+DefinitionDoc dot_product as "dot_product"

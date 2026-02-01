@@ -1,7 +1,9 @@
-import Game.Levels.SpaceWorld.L01_Begin
-import Game.Levels.SpaceWorld.L02_Zero
-import Game.Levels.SpaceWorld.L03_Comm
-import Game.Levels.SpaceWorld.L04_Dot
+import Game.Levels.Space.L01_Begin
+import Game.Levels.Space.L02_Zero
+import Game.Levels.Space.L03_Add_Inverse
+import Game.Levels.Space.L04_Comm
+import Game.Levels.Space.L05_Add_Assoc
+import Game.Levels.Space.L06_Dot
 
 World "SpaceWorld"
 Title "Space World"

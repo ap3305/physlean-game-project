@@ -1,12 +1,8 @@
 import Game.Metadata
-import Game.Theorems
-import Game.TheoremDocs
-import Mathlib.Algebra.Ring.Basic
-import Mathlib.Data.Real.Basic
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Analysis.InnerProductSpace.Basic
+import Game.Theorems.Space.Theorems
+import Game.Theorems.Space.TheoremDocs
 
-World "SpaceWorld"
+World "Space"
 Level 1
 
 Title "Humble Beginnings"
@@ -17,16 +13,14 @@ Mathlib provides us with notation for creating vectors of any length using the c
 
 We addionally define `space.x`, `space.y`, and `space.z` and three lemmas `x_val`, `y_val`, and `z_val` equating them to the values `![x, y, z]`, use this level to familarise yourself with all of this notation."
 
-Statement (u v : space) (h : u = ![1, 2, 3]) (g : v = ![3, 4, 5]) : u.x + v.z = u.y * v.x := by
+Statement (u v : Space) (h : u = ⟨1, 2, 3⟩) (g : v = ⟨3, 4, 5⟩) : u.x + v.z = u.y * v.x := by
   rw [h, g]
-  simp
+  change 1 + 5 = 2 * 3
   ring
-
 
 Conclusion ""
 
-NewTheorem x_val y_val z_val
-NewTactic rw simp ring
+NewTactic rw change ring
 NewDefinition space
 
 NewHiddenTactic rewrite nth_rewrite rwa

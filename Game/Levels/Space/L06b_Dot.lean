@@ -1,13 +1,13 @@
 import Game.Metadata
-import Game.Theorems
-import Game.TheoremDocs
+import Game.Theorems.Space.Theorems
+import Game.Theorems.Space.TheoremDocs
 import Mathlib.Algebra.Ring.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Analysis.InnerProductSpace.Basic
 
-World "SpaceWorld"
-Level 5
+World "Space"
+Level 6
 
 Title ""
 

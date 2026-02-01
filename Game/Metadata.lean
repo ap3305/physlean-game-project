@@ -1,4 +1,7 @@
 import GameServer
+import Mathlib.Data.Real.Basic
+import Mathlib.Algebra.Ring.Basic
+import Mathlib.Tactic.Ring
 -- import Mathlib.Tactic.Common
 
 /-! Use this file to add things that should be available in all levels.
