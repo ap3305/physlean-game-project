@@ -7,7 +7,7 @@ import Game.Levels.Space.L06_Mul_Comm
 import Game.Levels.Space.L07_Scalar_Mul
 import Game.Levels.Space.L08_Dot
 
-World "SpaceWorld"
+World "Space"
 Title "Space World"
 
 Introduction "

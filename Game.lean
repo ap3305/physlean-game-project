@@ -1,4 +1,4 @@
-import Game.Levels.SpaceWorld
+import Game.Levels.Space
 
 -- Here's what we'll put on the title screen
 Title "Hello World Game"
