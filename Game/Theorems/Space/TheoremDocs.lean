@@ -39,33 +39,76 @@ TacticDoc ring
 
 
 
-
-
-
+/--
+some description
+-/
+TheoremDoc add_zero as "add_zero" in "ℝ"
 
 /--
 some description
 -/
-TheoremDoc x_val as "x_val" in "Space"
+TheoremDoc zero_add as "zero_add" in "ℝ"
 
 /--
 some description
 -/
-TheoremDoc y_val as "x_val" in "Space"
+TheoremDoc add_neg_cancel as "add_neg_cancel" in "ℝ"
 
 /--
 some description
 -/
-TheoremDoc z_val as "x_val" in "Space"
+TheoremDoc neg_add_cancel as "neg_add_cancel" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc add_comm as "add_comm" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc add_assoc as "add_assoc" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc mul_add as "mul_add" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc add_mul as "add_mul" in "ℝ"
+
 
 /--
 some description
 -/
 TheoremDoc vector_add_zero as "vector_add_zero" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_add_negation as "vector_add_negation" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_add_comm as "vector_add_comm" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_add_assoc as "vector_add_assoc" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_mul_comm as "vector_mul_comm" in "Space"
+
+/--
+some description
+-/
+TheoremDoc vector_add_mul as "vector_add_mul" in "Space"
 
 
 
@@ -76,7 +119,7 @@ TheoremDoc vector_add_zero as "vector_add_zero" in "Space"
 /--
 some description
 -/
-DefinitionDoc space as "space"
+DefinitionDoc Space as "Space"
 
 /--
 some description

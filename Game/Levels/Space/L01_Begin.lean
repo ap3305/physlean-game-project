@@ -20,7 +20,7 @@ Statement (u v : Space) (h : u = ⟨1, 2, 3⟩) (g : v = ⟨3, 4, 5⟩) : u.x + 
 
 Conclusion ""
 
-NewTactic rw change ring
-NewDefinition space
+NewTactic rw change ring rfl
+NewDefinition Space
 
 NewHiddenTactic rewrite nth_rewrite rwa

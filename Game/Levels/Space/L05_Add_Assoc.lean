@@ -9,11 +9,15 @@ Title ""
 
 Introduction ""
 
-Statement (u v w : space) (h : u = ![1, 2, 3]) (g : v = ![3, 4, 5]) (f : w = ![5, 6, 7]) : u + (v + w) = (u + v) + w := by
-  rw [h, g, f]
+Statement (u v w : Space) : u + (v + w) = (u + v) + w := by
   ext
-  all_goals
-    simp
-    ring
+  change u.x + (v.x + w.x) = (u.x + v.x) + w.x
+  rw [add_assoc]
+  change u.y + (v.y + w.y) = (u.y + v.y) + w.y
+  rw [add_assoc]
+  change u.z + (v.z + w.z) = (u.z + v.z) + w.z
+  rw [add_assoc]
 
 Conclusion ""
+
+NewTheorem add_assoc vector_add_comm

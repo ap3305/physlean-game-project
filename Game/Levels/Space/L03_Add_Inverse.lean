@@ -7,12 +7,20 @@ Level 3
 
 Title ""
 
-Introduction "Define `dot_product`, make notation for it using `infix:100 \" • \" => dot_product`, 100 is precedence."
+Introduction ""
 
-Statement (u : space) (h : u = ![1, 2, 3]) : u + (-u) = 0 := by
-  rw [h]
+Statement (u : Space) : u + (-u) = 0 := by
   ext
-  all_goals
-    simp
+  rw [add_x]
+  change u.x + -u.x = 0
+  rw [add_neg_cancel]
+  rw [add_y]
+  change u.y + -u.y = 0
+  rw [add_neg_cancel]
+  rw [add_z]
+  change u.z + -u.z = 0
+  rw [add_neg_cancel]
 
 Conclusion ""
+
+NewTheorem vector_add_zero add_neg_cancel neg_add_cancel
