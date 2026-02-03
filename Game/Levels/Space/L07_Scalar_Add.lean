@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-Statement (u v : Space) (a : ℝ) : a * (u + v) = a * u + a * v := by
+Statement (u v : Space) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
   change a * (u.x + v.x) = a * u.x + a * v.x
   rw [mul_add]
@@ -20,4 +20,4 @@ Statement (u v : Space) (a : ℝ) : a * (u + v) = a * u + a * v := by
 
 Conclusion ""
 
-NewTheorem vector_mul_comm mul_add mul_add
+NewTheorem mul_add

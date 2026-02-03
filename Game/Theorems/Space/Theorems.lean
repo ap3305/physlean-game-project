@@ -18,11 +18,8 @@ instance : Sub Space where
 instance : Neg Space where
   neg u := { x := -u.x, y := -u.y, z := -u.z }
 
-instance : HMul ℝ Space Space where
-  hMul a u := { x := a * u.x, y := a * u.y, z := a * u.z }
-
-instance : HMul Space ℝ Space where
-  hMul u a := { x := a * u.x, y := a * u.y, z := a * u.z }
+instance : SMul ℝ Space where
+  smul a u := { x := a * u.x, y := a * u.y, z := a * u.z }
 
 instance : Zero Space where
   zero := { x := 0, y := 0, z := 0 }
@@ -44,13 +41,9 @@ infix:100 " • " => dot_product
 @[simp] lemma neg_y (u : Space) : (-u).y = -u.y := rfl
 @[simp] lemma neg_z (u : Space) : (-u).z = -u.z := rfl
 
-@[simp] lemma mul_x (u : Space) (a : ℝ) : (a * u).x = a * u.x := rfl
-@[simp] lemma mul_y (u : Space) (a : ℝ) : (a * u).y = a * u.y := rfl
-@[simp] lemma mul_z (u : Space) (a : ℝ) : (a * u).z = a * u.z := rfl
-
-@[simp] lemma x_mul (u : Space) (a : ℝ) : (u * a).x = a * u.x := rfl
-@[simp] lemma y_mul (u : Space) (a : ℝ) : (u * a).y = a * u.y := rfl
-@[simp] lemma z_mul (u : Space) (a : ℝ) : (u * a).z = a * u.z := rfl
+@[simp] lemma smul_x (u : Space) (a : ℝ) : (a • u).x = a * u.x := rfl
+@[simp] lemma smul_y (u : Space) (a : ℝ) : (a • u).y = a * u.y := rfl
+@[simp] lemma smul_z (u : Space) (a : ℝ) : (a • u).z = a * u.z := rfl
 
 @[simp]
 lemma vector_add_zero (u : Space) : u + (0 : Space) = u := by
@@ -77,11 +70,13 @@ lemma vector_add_assoc (u v w : Space) : u + (v + w) = (u + v) + w := by
     ring
 
 @[simp]
-lemma vector_mul_comm (u : Space) (a : ℝ) : a * u = u * a := by
-  rfl
+lemma vector_smul_one (u : Space) : (1 : ℝ) • u = u := by
+  ext
+  all_goals
+    simp
 
 @[simp]
-lemma vector_add_mul (u v : Space) (a : ℝ) : a * (u + v) = a * u + a * v := by
+lemma vector_smul_add (u v : Space) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
   all_goals
     simp

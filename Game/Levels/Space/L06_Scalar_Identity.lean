@@ -9,8 +9,14 @@ Title ""
 
 Introduction ""
 
-Statement (u : Space) (a : ℝ) : a * u = u * a := by
-  rfl
+Statement (u : Space) : (1 : ℝ) • u = u := by
+  ext
+  change 1 * u.x = u.x
+  rw [one_mul]
+  change 1 * u.y = u.y
+  rw [one_mul]
+  change 1 * u.z = u.z
+  rw [one_mul]
 
 Conclusion ""
 
