@@ -5,7 +5,8 @@ import Game.Levels.Space.L04_Add_Comm
 import Game.Levels.Space.L05_Add_Assoc
 import Game.Levels.Space.L06_Scalar_Identity
 import Game.Levels.Space.L07_Scalar_Add
-import Game.Levels.Space.L08_Dot
+import Game.Levels.Space.L08_Add_Scalar
+import Game.Levels.Space.L09_Scalar_Assoc
 
 World "Space"
 Title "Space World"

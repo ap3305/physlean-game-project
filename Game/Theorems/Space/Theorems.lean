@@ -51,7 +51,7 @@ lemma vector_add_zero (u : Space) : u + (0 : Space) = u := by
   all_goals simp
 
 @[simp]
-lemma vector_add_negation (u : Space) : u + (-u) = 0 := by
+lemma vector_add_inv (u : Space) : u + (-u) = 0 := by
   ext
   all_goals simp
 
@@ -77,6 +77,20 @@ lemma vector_smul_one (u : Space) : (1 : ℝ) • u = u := by
 
 @[simp]
 lemma vector_smul_add (u v : Space) (a : ℝ) : a • (u + v) = a • u + a • v := by
+  ext
+  all_goals
+    simp
+    ring
+
+@[simp]
+lemma vector_add_smul (u : Space) (a b : ℝ) : (a + b) • u = a • u + b • u := by
+  ext
+  all_goals
+    simp
+    ring
+
+@[simp]
+lemma vector_smul_assoc (u : Space) (a b : ℝ) : a • (b • u) = (a * b) • u := by
   ext
   all_goals
     simp

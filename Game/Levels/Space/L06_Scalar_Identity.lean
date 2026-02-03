@@ -20,4 +20,4 @@ Statement (u : Space) : (1 : ℝ) • u = u := by
 
 Conclusion ""
 
-NewTheorem vector_add_comm
+NewTheorem vector_add_assoc one_mul mul_one

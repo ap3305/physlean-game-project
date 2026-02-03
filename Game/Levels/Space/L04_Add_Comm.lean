@@ -20,4 +20,4 @@ Statement (u v : Space) : u + v = v + u := by
 
 Conclusion ""
 
-NewTheorem add_comm vector_add_negation
+NewTheorem add_comm vector_add_inv
