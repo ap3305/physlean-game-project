@@ -3,7 +3,7 @@ import Game.Theorems.Space.Theorems
 import Game.Theorems.Space.TheoremDocs
 
 World "Space"
-Level 8
+Level 7
 
 Title ""
 

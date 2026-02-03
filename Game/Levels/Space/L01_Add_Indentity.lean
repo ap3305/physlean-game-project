@@ -3,7 +3,7 @@ import Game.Theorems.Space.Theorems
 import Game.Theorems.Space.TheoremDocs
 
 World "Space"
-Level 2
+Level 1
 
 Title ""
 
@@ -20,8 +20,6 @@ Statement (u : Space) : u + (0 : Space) = u := by
 
 Conclusion ""
 
-NewTactic ext rw change rfl exact apply
+NewTactic ext
 NewTheorem add_zero zero_add
-NewDefinition Space
-
-NewHiddenTactic rewrite nth_rewrite rwa
+DisabledTactic ring
