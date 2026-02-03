@@ -79,6 +79,23 @@ some description
 -/
 TheoremDoc add_mul as "add_mul" in "ℝ"
 
+/--
+some description
+-/
+TheoremDoc one_mul as "one_mul" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc mul_one as "mul_one" in "ℝ"
+
+/--
+some description
+-/
+TheoremDoc mul_assoc as "mul_assoc" in "ℝ"
+
+
+
 
 /--
 some description
@@ -88,7 +105,7 @@ TheoremDoc vector_add_zero as "vector_add_zero" in "Space"
 /--
 some description
 -/
-TheoremDoc vector_add_negation as "vector_add_negation" in "Space"
+TheoremDoc vector_add_inv as "vector_add_inv" in "Space"
 
 /--
 some description
@@ -103,14 +120,22 @@ TheoremDoc vector_add_assoc as "vector_add_assoc" in "Space"
 /--
 some description
 -/
-TheoremDoc vector_mul_comm as "vector_mul_comm" in "Space"
+TheoremDoc vector_smul_one as "vector_smul_one" in "Space"
 
 /--
 some description
 -/
-TheoremDoc vector_add_mul as "vector_add_mul" in "Space"
+TheoremDoc vector_smul_add as "vector_smul_add" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_add_smul as "vector_add_smul" in "Space"
 
+/--
+some description
+-/
+TheoremDoc vector_smul_assoc as "vector_add_assoc" in "Space"
 
 
 
@@ -119,7 +144,7 @@ TheoremDoc vector_add_mul as "vector_add_mul" in "Space"
 /--
 some description
 -/
-DefinitionDoc Space as "Space"
+DefinitionDoc MySpace as "MySpace"
 
 /--
 some description

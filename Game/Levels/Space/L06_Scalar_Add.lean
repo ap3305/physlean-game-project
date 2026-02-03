@@ -20,4 +20,4 @@ Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
 
 Conclusion ""
 
-NewTheorem mul_add add_mul vector_smul_one
+NewTheorem vector_smul_one

@@ -20,4 +20,4 @@ Statement (u v : MySpace) : u + v = v + u := by
 
 Conclusion ""
 
-NewTheorem add_comm vector_add_inv
+NewTheorem vector_add_inv

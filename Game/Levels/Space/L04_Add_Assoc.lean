@@ -20,4 +20,4 @@ Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
 
 Conclusion ""
 
-NewTheorem add_assoc vector_add_comm
+NewTheorem vector_add_comm

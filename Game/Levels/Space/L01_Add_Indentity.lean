@@ -21,7 +21,7 @@ Statement (v : MySpace) : v + (0 : MySpace) = v := by
 Conclusion ""
 
 NewTactic ext rw change rfl exact apply
-NewTheorem add_zero zero_add
+NewTheorem add_zero zero_add add_neg_cancel neg_add_cancel add_comm add_assoc one_mul mul_one mul_add add_mul mul_assoc
 NewDefinition MySpace
 
 NewHiddenTactic rewrite nth_rewrite rwa

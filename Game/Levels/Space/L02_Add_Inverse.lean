@@ -23,4 +23,4 @@ Statement (v : MySpace) : v + (-v) = 0 := by
 
 Conclusion ""
 
-NewTheorem vector_add_zero add_neg_cancel neg_add_cancel
+NewTheorem vector_add_zero
