@@ -6,6 +6,7 @@ import Game.Levels.Space.L05_Scalar_Identity
 import Game.Levels.Space.L06_Scalar_Add
 import Game.Levels.Space.L07_Add_Scalar
 import Game.Levels.Space.L08_Scalar_Assoc
+import Game.Levels.Space.L09_Vector_Simp
 
 World "Space"
 Title "Space World"

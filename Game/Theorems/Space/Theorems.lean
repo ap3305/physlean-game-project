@@ -45,6 +45,8 @@ infix:100 " • " => dot_product
 @[simp] lemma smul_y (u : MySpace) (a : ℝ) : (a • u).y = a * u.y := rfl
 @[simp] lemma smul_z (u : MySpace) (a : ℝ) : (a • u).z = a * u.z := rfl
 
+
+
 @[simp]
 lemma vector_add_zero (u : MySpace) : u + (0 : MySpace) = u := by
   ext
@@ -95,3 +97,16 @@ lemma vector_smul_assoc (u : MySpace) (a b : ℝ) : a • (b • u) = (a * b) �
   all_goals
     simp
     ring
+
+@[simp]
+lemma vector_add_left_comm (u v w : MySpace) : u + (v + w) = v + (u + w) := by
+  rw [vector_add_assoc]
+  nth_rewrite 2 [vector_add_comm]
+  rw [vector_add_assoc]
+
+
+macro "vector_simp" : tactic => `(tactic| simp only [
+  vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
+  vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
+] <;> ring <;> simp only [vector_add_comm]
+)

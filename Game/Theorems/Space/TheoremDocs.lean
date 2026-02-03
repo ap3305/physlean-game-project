@@ -31,8 +31,10 @@ some description
 -/
 TacticDoc ring
 
-
-
+/--
+some description
+-/
+TacticDoc vector_simp
 
 
 
