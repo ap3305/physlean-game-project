@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-Statement (u v : Space) (a : ℝ) : a • (u + v) = a • u + a • v := by
+Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
   change a * (u.x + v.x) = a * u.x + a * v.x
   rw [mul_add]

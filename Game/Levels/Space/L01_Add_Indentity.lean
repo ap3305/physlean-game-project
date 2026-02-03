@@ -9,17 +9,19 @@ Title ""
 
 Introduction ""
 
-Statement (u : Space) : u + (0 : Space) = u := by
+Statement (v : MySpace) : v + (0 : MySpace) = v := by
   ext
-  change u.x + 0 = u.x
+  change v.x + 0 = v.x
   rw [add_zero]
-  change u.y + 0 = u.y
+  change v.y + 0 = v.y
   rw [add_zero]
-  change u.z + 0 = u.z
+  change v.z + 0 = v.z
   rw [add_zero]
 
 Conclusion ""
 
-NewTactic ext
+NewTactic ext rw change rfl exact apply
 NewTheorem add_zero zero_add
-DisabledTactic ring
+NewDefinition MySpace
+
+NewHiddenTactic rewrite nth_rewrite rwa

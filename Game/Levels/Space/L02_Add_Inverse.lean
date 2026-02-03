@@ -9,16 +9,16 @@ Title ""
 
 Introduction ""
 
-Statement (u : Space) : u + (-u) = 0 := by
+Statement (v : MySpace) : v + (-v) = 0 := by
   ext
   rw [add_x]
-  change u.x + -u.x = 0
+  change v.x + -v.x = 0
   rw [add_neg_cancel]
   rw [add_y]
-  change u.y + -u.y = 0
+  change v.y + -v.y = 0
   rw [add_neg_cancel]
   rw [add_z]
-  change u.z + -u.z = 0
+  change v.z + -v.z = 0
   rw [add_neg_cancel]
 
 Conclusion ""

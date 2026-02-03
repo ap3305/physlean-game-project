@@ -9,13 +9,13 @@ Title ""
 
 Introduction ""
 
-Statement (u : Space) : (1 : ℝ) • u = u := by
+Statement (v : MySpace) : (1 : ℝ) • v = v := by
   ext
-  change 1 * u.x = u.x
+  change 1 * v.x = v.x
   rw [one_mul]
-  change 1 * u.y = u.y
+  change 1 * v.y = v.y
   rw [one_mul]
-  change 1 * u.z = u.z
+  change 1 * v.z = v.z
   rw [one_mul]
 
 Conclusion ""

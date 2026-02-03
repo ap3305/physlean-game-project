@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-Statement (u v w : Space) : u + (v + w) = (u + v) + w := by
+Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
   ext
   change u.x + (v.x + w.x) = (u.x + v.x) + w.x
   rw [add_assoc]

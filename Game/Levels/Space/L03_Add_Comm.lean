@@ -9,7 +9,7 @@ Title "Back and Forth"
 
 Introduction ""
 
-Statement (u v : Space) : u + v = v + u := by
+Statement (u v : MySpace) : u + v = v + u := by
   ext
   change u.x + v.x = v.x + u.x
   rw [add_comm]

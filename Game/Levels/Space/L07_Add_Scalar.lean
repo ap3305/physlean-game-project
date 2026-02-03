@@ -9,13 +9,13 @@ Title ""
 
 Introduction ""
 
-Statement (u : Space) (a b : ℝ) : (a + b) • u = a • u + b • u := by
+Statement (v : MySpace) (a b : ℝ) : (a + b) • v = a • v + b • v := by
   ext
-  change (a + b) * u.x = a * u.x + b * u.x
+  change (a + b) * v.x = a * v.x + b * v.x
   rw [add_mul]
-  change (a + b) * u.y = a * u.y + b * u.y
+  change (a + b) * v.y = a * v.y + b * v.y
   rw [add_mul]
-  change (a + b) * u.z = a * u.z + b * u.z
+  change (a + b) * v.z = a * v.z + b * v.z
   rw [add_mul]
 
 Conclusion ""
