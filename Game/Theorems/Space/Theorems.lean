@@ -46,63 +46,49 @@ infix:100 " • " => dot_product
 @[simp] lemma smul_z (u : MySpace) (a : ℝ) : (a • u).z = a * u.z := rfl
 
 
-
-@[simp]
 lemma vector_add_zero (u : MySpace) : u + (0 : MySpace) = u := by
   ext
   all_goals simp
 
-@[simp]
 lemma vector_add_inv (u : MySpace) : u + (-u) = 0 := by
   ext
   all_goals simp
 
-@[simp]
 lemma vector_add_comm (u v : MySpace) : u + v = v + u := by
   ext
   all_goals
     simp
     ring
 
-@[simp]
 lemma vector_add_assoc (u v w : MySpace) : u + (v + w) = (u + v) + w := by
   ext
   all_goals
     simp
     ring
 
-@[simp]
 lemma vector_smul_one (u : MySpace) : (1 : ℝ) • u = u := by
   ext
   all_goals
     simp
 
-@[simp]
 lemma vector_smul_add (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
   all_goals
     simp
     ring
 
-@[simp]
 lemma vector_add_smul (u : MySpace) (a b : ℝ) : (a + b) • u = a • u + b • u := by
   ext
   all_goals
     simp
     ring
 
-@[simp]
 lemma vector_smul_assoc (u : MySpace) (a b : ℝ) : a • (b • u) = (a * b) • u := by
   ext
   all_goals
     simp
     ring
 
-@[simp]
-lemma vector_add_left_comm (u v w : MySpace) : u + (v + w) = v + (u + w) := by
-  rw [vector_add_assoc]
-  nth_rewrite 2 [vector_add_comm]
-  rw [vector_add_assoc]
 
 
 macro "vector_simp" : tactic => `(tactic| simp only [

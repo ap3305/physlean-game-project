@@ -11,13 +11,9 @@ Introduction ""
 
 Statement (u v : MySpace) : u + v = v + u := by
   ext
-  change u.x + v.x = v.x + u.x
-  rw [add_comm]
-  change u.y + v.y = v.y + u.y
-  rw [add_comm]
-  change u.z + v.z = v.z + u.z
-  rw [add_comm]
+  all_goals simp
 
 Conclusion ""
 
+NewTactic simp all_goals
 NewTheorem vector_add_inv

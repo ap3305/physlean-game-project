@@ -11,12 +11,9 @@ Introduction ""
 
 Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
   ext
-  change u.x + (v.x + w.x) = (u.x + v.x) + w.x
-  rw [add_assoc]
-  change u.y + (v.y + w.y) = (u.y + v.y) + w.y
-  rw [add_assoc]
-  change u.z + (v.z + w.z) = (u.z + v.z) + w.z
-  rw [add_assoc]
+  all_goals
+    simp
+    rw [add_assoc]
 
 Conclusion ""
 

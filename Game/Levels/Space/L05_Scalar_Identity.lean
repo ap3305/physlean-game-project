@@ -21,3 +21,5 @@ Statement (v : MySpace) : (1 : ℝ) • v = v := by
 Conclusion ""
 
 NewTheorem vector_add_assoc
+
+DisabledTactic simp

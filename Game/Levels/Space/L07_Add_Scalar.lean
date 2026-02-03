@@ -12,12 +12,16 @@ Introduction ""
 Statement (v : MySpace) (a b : ℝ) : (a + b) • v = a • v + b • v := by
   ext
   change (a + b) * v.x = a * v.x + b * v.x
-  rw [add_mul]
+  ring
   change (a + b) * v.y = a * v.y + b * v.y
-  rw [add_mul]
+  ring
   change (a + b) * v.z = a * v.z + b * v.z
-  rw [add_mul]
+  ring
 
 Conclusion ""
 
+NewTactic ring
 NewTheorem vector_smul_add
+
+DisabledTactic simp
+DisabledTheorem add_mul mul_add

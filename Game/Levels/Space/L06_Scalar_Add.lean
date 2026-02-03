@@ -21,3 +21,5 @@ Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
 Conclusion ""
 
 NewTheorem vector_smul_one
+
+DisabledTactic simp
