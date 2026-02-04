@@ -13,7 +13,7 @@ Statement (u v : MySpace) : u + v = v + u := by
   ext
   all_goals
     simp
-    rw[add_comm]
+    rw [add_comm]
 
 Conclusion ""
 

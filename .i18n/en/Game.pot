@@ -43,6 +43,13 @@ msgstr ""
 #: Game.Levels.Space.L09_Vector_Simp
 #: Game.Levels.Space.L09_Vector_Simp
 #: Game.Levels.Space.L09_Vector_Simp
+#: Game.Levels.Time.L01_Time
+#: Game.Levels.Time.L01_Time
+#: Game.Levels.Time.L01_Time
+#: Game.Levels.Time.L02_Exclusivity
+#: Game.Levels.Time.L02_Exclusivity
+#: Game.Levels.Time.L02_Exclusivity
+#: Game.Levels.Time
 msgid ""
 msgstr ""
 
@@ -90,6 +97,11 @@ msgstr ""
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
 msgid "some description"
 msgstr ""
 
@@ -100,6 +112,10 @@ msgid "Here you can put additional information about the game. It is accessible\
 "For example: Game version, Credits, Link to Github and Zulip, etc.\n"
 "\n"
 "Use **markdown**."
+msgstr ""
+
+#: Game.Levels.Time
+msgid "Time World"
 msgstr ""
 
 #. §0: `u • u ≥ 0`

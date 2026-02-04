@@ -17,5 +17,6 @@ Statement (t : MyTime) (h: t.val = 4): is_future t := by
 
 Conclusion ""
 
-
+NewTactic norm_num
+NewTheorem is_past is_present is_future
 NewDefinition MyTime

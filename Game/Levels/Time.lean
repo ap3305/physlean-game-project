@@ -1,7 +1,8 @@
 import Game.Levels.Time.L01_Time
+import Game.Levels.Time.L02_Exclusivity
 
-World "Light"
-Title "Light World"
+World "Time"
+Title "Time World"
 
 
 Introduction "
