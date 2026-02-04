@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03\n"
+"POT-Creation-Date: 2026-02-04\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -17,30 +17,32 @@ msgid "This text appears on the starting page where one selects the world/level 
 "You can use **markdown**."
 msgstr ""
 
-#: Game.Levels.Space.L01_Begin
-msgid "Humble Beginnings"
-msgstr ""
-
-#: Game.Levels.Space.L01_Begin
-#: Game.Levels.Space.L02_Add_Indentity
-#: Game.Levels.Space.L02_Add_Indentity
-#: Game.Levels.Space.L02_Add_Indentity
-#: Game.Levels.Space.L03_Add_Inverse
-#: Game.Levels.Space.L03_Add_Inverse
-#: Game.Levels.Space.L03_Add_Inverse
-#: Game.Levels.Space.L04_Add_Comm
-#: Game.Levels.Space.L04_Add_Comm
-#: Game.Levels.Space.L05_Add_Assoc
-#: Game.Levels.Space.L05_Add_Assoc
-#: Game.Levels.Space.L05_Add_Assoc
-#: Game.Levels.Space.L06_Mul_Comm
-#: Game.Levels.Space.L06_Mul_Comm
-#: Game.Levels.Space.L06_Mul_Comm
-#: Game.Levels.Space.L07_Scalar_Mul
-#: Game.Levels.Space.L07_Scalar_Mul
-#: Game.Levels.Space.L07_Scalar_Mul
-#: Game.Levels.Space.L08_Dot
-#: Game.Levels.Space.L08_Dot
+#: Game.Levels.Space.L01_Add_Indentity
+#: Game.Levels.Space.L01_Add_Indentity
+#: Game.Levels.Space.L01_Add_Indentity
+#: Game.Levels.Space.L02_Add_Inverse
+#: Game.Levels.Space.L02_Add_Inverse
+#: Game.Levels.Space.L02_Add_Inverse
+#: Game.Levels.Space.L03_Add_Comm
+#: Game.Levels.Space.L03_Add_Comm
+#: Game.Levels.Space.L04_Add_Assoc
+#: Game.Levels.Space.L04_Add_Assoc
+#: Game.Levels.Space.L04_Add_Assoc
+#: Game.Levels.Space.L05_Scalar_Identity
+#: Game.Levels.Space.L05_Scalar_Identity
+#: Game.Levels.Space.L05_Scalar_Identity
+#: Game.Levels.Space.L06_Scalar_Add
+#: Game.Levels.Space.L06_Scalar_Add
+#: Game.Levels.Space.L06_Scalar_Add
+#: Game.Levels.Space.L07_Add_Scalar
+#: Game.Levels.Space.L07_Add_Scalar
+#: Game.Levels.Space.L07_Add_Scalar
+#: Game.Levels.Space.L08_Scalar_Assoc
+#: Game.Levels.Space.L08_Scalar_Assoc
+#: Game.Levels.Space.L08_Scalar_Assoc
+#: Game.Levels.Space.L09_Vector_Simp
+#: Game.Levels.Space.L09_Vector_Simp
+#: Game.Levels.Space.L09_Vector_Simp
 msgid ""
 msgstr ""
 
@@ -60,21 +62,12 @@ msgstr ""
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
 
-#. §0: `dot_product`
-#. §1: `infix:100 \" • \" => dot_product`
-#: Game.Levels.Space.L08_Dot
-msgid "Define §0, make notation for it using §1, 100 is precedence."
-msgstr ""
-
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
-"\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
-"\n"
-"Use **markdown**."
-msgstr ""
-
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
@@ -100,23 +93,13 @@ msgstr ""
 msgid "some description"
 msgstr ""
 
-#. §0: `Space (d : ℕ)`
-#. §1: `abbrev space : Type := Space 3`
-#. §2: `Space`
-#. §3: `![a, b, ...]`
-#. §4: `space.x`
-#. §5: `space.y`
-#. §6: `space.z`
-#. §7: `x_val`
-#. §8: `y_val`
-#. §9: `z_val`
-#. §10: `![x, y, z]`
-#: Game.Levels.Space.L01_Begin
-msgid "In Physlean, §0 is a type representing a d-dimensional space. In this world we are specifically working with 3 dimensions so we define §1. This locks us into working in three dimensions whilst maintaing access to all of the results Physlean provides about §2.\n"
+#: Game
+msgid "Here you can put additional information about the game. It is accessible\n"
+"from the starting through the drop-down menu.\n"
 "\n"
-"Mathlib provides us with notation for creating vectors of any length using the constructor §3.\n"
+"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
 "\n"
-"We addionally define §4, §5, and §6 and three lemmas §7, §8, and §9 equating them to the values §10, use this level to familarise yourself with all of this notation."
+"Use **markdown**."
 msgstr ""
 
 #. §0: `u • u ≥ 0`
@@ -130,7 +113,7 @@ msgstr ""
 msgid "Space World"
 msgstr ""
 
-#: Game.Levels.Space.L04_Add_Comm
+#: Game.Levels.Space.L03_Add_Comm
 msgid "Back and Forth"
 msgstr ""
 
