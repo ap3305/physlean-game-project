@@ -3,7 +3,7 @@ import Game.Theorems.Inner_Product.Theorems
 import Game.Theorems.Inner_Product.TheoremDocs
 
 World "Inner_Product"
-Level 1
+Level 2
 
 Title ""
 
@@ -23,3 +23,5 @@ Statement (
   exact h
 
 Conclusion ""
+
+NewTheorem add_inner

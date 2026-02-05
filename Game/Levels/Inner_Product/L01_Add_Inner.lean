@@ -17,3 +17,6 @@ Statement (u v w : MySpace) : my_inner u (v + w) = ≪u, v≫ + ≪u, w≫ := by
   rfl
 
 Conclusion ""
+
+NewTheorem inner_comm inner_add inner_smul
+NewDefinition my_inner

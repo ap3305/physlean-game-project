@@ -1,5 +1,6 @@
 import Game.Levels.Space
 import Game.Levels.Time
+import Game.Levels.Inner_Product
 
 -- Here's what we'll put on the title screen
 Title "Hello World Game"

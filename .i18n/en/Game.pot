@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-04\n"
+"POT-Creation-Date: 2026-02-05\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -50,6 +50,13 @@ msgstr ""
 #: Game.Levels.Time.L02_Exclusivity
 #: Game.Levels.Time.L02_Exclusivity
 #: Game.Levels.Time
+#: Game.Levels.Inner_Product.L01_Add_Inner
+#: Game.Levels.Inner_Product.L01_Add_Inner
+#: Game.Levels.Inner_Product.L01_Add_Inner
+#: Game.Levels.Inner_Product.L02_Inner_Zero
+#: Game.Levels.Inner_Product.L02_Inner_Zero
+#: Game.Levels.Inner_Product.L02_Inner_Zero
+#: Game.Levels.Inner_Product
 msgid ""
 msgstr ""
 
@@ -102,6 +109,11 @@ msgstr ""
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
 msgid "some description"
 msgstr ""
 
@@ -127,6 +139,10 @@ msgstr ""
 
 #: Game.Levels.Space
 msgid "Space World"
+msgstr ""
+
+#: Game.Levels.Inner_Product
+msgid "Inner Product World"
 msgstr ""
 
 #: Game.Levels.Space.L03_Add_Comm
