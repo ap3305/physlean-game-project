@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-Statement (u v w : MySpace) : my_inner u (v + w) = ≪u, v≫ + ≪u, w≫ := by
+Statement (u v w : MySpace) : my_inner (u + v) w = ≪u, w≫ + ≪v, w≫ := by
   rw [inner_comm]
   rw [inner_add]
   rw [inner_comm]

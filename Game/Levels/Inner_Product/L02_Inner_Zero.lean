@@ -12,13 +12,12 @@ Introduction ""
 Statement (
   preamble :=
     constructor
-    have h : ≪u, 0≫ = ≪u, 0 + 0≫ := by
-      vector_simp
+    have h : ≪v, 0≫ = ≪v, 0 + 0≫ := by vector_simp
     rotate_right
-) (u : MySpace) : (≪u, 0≫ = 0) ∧ (≪u, 0≫ = ≪u, 0+0≫) := by
+) (v : MySpace) : (≪v, 0≫ = 0) ∧ (≪v, 0≫ = ≪v, 0+0≫) := by
   vector_simp
   rw [add_inner] at h
-  nth_rw 1 [← add_zero ≪u, 0≫] at h
+  nth_rw 1 [← add_zero ≪v, 0≫] at h
   simp at h
   exact h
 
