@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open inner_product
+
 Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + ≪v, v≫ := by
   rw [inner_add, add_inner, add_inner]
   nth_rewrite 2 [inner_comm]

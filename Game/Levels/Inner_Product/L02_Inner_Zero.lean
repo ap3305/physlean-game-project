@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open inner_product
+
 Statement (
   preamble :=
     constructor
@@ -16,7 +18,7 @@ Statement (
     rotate_right
 ) (v : MySpace) : (≪v, 0≫ = 0) ∧ (≪v, 0≫ = ≪v, 0+0≫) := by
   vector_simp
-  rw [add_inner] at h
+  rw [inner_add] at h
   nth_rw 1 [← add_zero ≪v, 0≫] at h
   simp at h
   exact h

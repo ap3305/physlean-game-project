@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open inner_product
+
 Statement (
   preamble :=
     constructor

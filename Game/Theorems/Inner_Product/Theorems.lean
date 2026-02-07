@@ -2,6 +2,8 @@ import GameServer
 import Game.Metadata
 import Game.Theorems.Space.Theorems
 
+namespace inner_product
+
 opaque my_inner : MySpace -> MySpace -> ℝ
 
 notation "≪" u ", " v "≫" => my_inner u v
@@ -16,3 +18,5 @@ lemma add_inner (u v w : MySpace) : ≪u + v, w≫ = ≪u, w≫ + ≪v, w≫ := 
   rw [inner_comm]
   nth_rewrite 2 [inner_comm]
   rfl
+
+end inner_product
