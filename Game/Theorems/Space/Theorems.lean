@@ -24,10 +24,6 @@ instance : SMul ℝ MySpace where
 instance : Zero MySpace where
   zero := { x := 0, y := 0, z := 0 }
 
-@[simp]
-def dot_product (u v : MySpace) := u.x * v.x + u.y * v.y + u.z * v.z
-
-infix:100 " • " => dot_product
 
 @[simp] lemma add_x (u v : MySpace) : (u + v).x = u.x + v.x := rfl
 @[simp] lemma add_y (u v : MySpace) : (u + v).y = u.y + v.y := rfl
