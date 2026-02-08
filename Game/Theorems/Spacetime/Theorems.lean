@@ -8,6 +8,8 @@ structure MySpacetime where
   y : ℝ
   z : ℝ
 
+namespace MySpacetime
+
 instance : Add MySpacetime where
   add u v := { t := u.t + v.t, x := u.x + v.x, y := u.y + v.y, z := u.z + v.z }
 
@@ -52,3 +54,7 @@ notation "η" => my_minkowski
 def my_inner (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
 notation "≪" u ", " v "≫" => my_inner u v
+
+
+
+end MySpacetime

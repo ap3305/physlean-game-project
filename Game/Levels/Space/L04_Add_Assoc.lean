@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
   ext
   all_goals
@@ -17,4 +19,4 @@ Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
 
 Conclusion ""
 
-NewTheorem vector_add_comm
+NewTheorem MySpace.vector_add_comm

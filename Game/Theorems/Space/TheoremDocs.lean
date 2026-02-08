@@ -14,12 +14,52 @@ TacticDoc rfl
 /--
 some description
 -/
+TacticDoc rewrite
+
+/--
+some description
+-/
+TacticDoc nth_rewrite
+
+/--
+some description
+-/
+TacticDoc nth_rw
+
+/--
+some description
+-/
+TacticDoc rwa
+
+/--
+some description
+-/
+TacticDoc exact
+
+/--
+some description
+-/
+TacticDoc assumption
+
+/--
+some description
+-/
+TacticDoc apply
+
+/--
+some description
+-/
 TacticDoc all_goals
 
 /--
 some description
 -/
 TacticDoc ext
+
+/--
+some description
+-/
+TacticDoc change
 
 /--
 some description
@@ -102,42 +142,42 @@ TheoremDoc mul_assoc as "mul_assoc" in "ℝ"
 /--
 some description
 -/
-TheoremDoc vector_add_zero as "vector_add_zero" in "Space"
+TheoremDoc MySpace.vector_add_zero as "vector_add_zero" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_add_inv as "vector_add_inv" in "Space"
+TheoremDoc MySpace.vector_add_inv as "vector_add_inv" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_add_comm as "vector_add_comm" in "Space"
+TheoremDoc MySpace.vector_add_comm as "vector_add_comm" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_add_assoc as "vector_add_assoc" in "Space"
+TheoremDoc MySpace.vector_add_assoc as "vector_add_assoc" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_smul_one as "vector_smul_one" in "Space"
+TheoremDoc MySpace.vector_smul_one as "vector_smul_one" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_smul_add as "vector_smul_add" in "Space"
+TheoremDoc MySpace.vector_smul_add as "vector_smul_add" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_add_smul as "vector_add_smul" in "Space"
+TheoremDoc MySpace.vector_add_smul as "vector_add_smul" in "Vectors"
 
 /--
 some description
 -/
-TheoremDoc vector_smul_assoc as "vector_add_assoc" in "Space"
+TheoremDoc MySpace.vector_smul_assoc as "vector_add_assoc" in "Vectors"
 
 
 
@@ -147,8 +187,3 @@ TheoremDoc vector_smul_assoc as "vector_add_assoc" in "Space"
 some description
 -/
 DefinitionDoc MySpace as "MySpace"
-
-/--
-some description
--/
-DefinitionDoc dot_product as "dot_product"

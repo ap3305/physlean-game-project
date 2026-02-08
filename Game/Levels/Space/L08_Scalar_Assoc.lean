@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (v : MySpace) (a b : ℝ) : a • (b • v) = (a * b) • v := by
   ext
   all_goals
@@ -17,4 +19,4 @@ Statement (v : MySpace) (a b : ℝ) : a • (b • v) = (a * b) • v := by
 
 Conclusion ""
 
-NewTheorem vector_add_smul
+NewTheorem MySpace.vector_add_smul

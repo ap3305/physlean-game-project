@@ -9,6 +9,8 @@ structure MySpace where
 
 -- { x := , y := , z :=  }
 
+namespace MySpace
+
 instance : Add MySpace where
   add u v := { x := u.x + v.x, y := u.y + v.y, z := u.z + v.z }
 
@@ -85,10 +87,10 @@ lemma vector_smul_assoc (u : MySpace) (a b : ℝ) : a • (b • u) = (a * b) �
     simp
     ring
 
-
-
 macro "vector_simp" : tactic => `(tactic| simp only [
   vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
   vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
 ] <;> ring <;> simp only [vector_add_comm]
 )
+
+end MySpace

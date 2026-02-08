@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open inner_product
+open my_inner
 
 Statement (
   preamble :=
@@ -25,4 +25,4 @@ Statement (
 
 Conclusion ""
 
-NewTheorem add_inner
+NewTheorem my_inner.add_inner my_inner.smul_inner

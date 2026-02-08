@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (v : MySpace) : v + (-v) = 0 := by
   ext
   rw [add_x]
@@ -23,4 +25,4 @@ Statement (v : MySpace) : v + (-v) = 0 := by
 
 Conclusion ""
 
-NewTheorem vector_add_zero
+NewTheorem MySpace.vector_add_zero

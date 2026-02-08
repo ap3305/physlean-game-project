@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (v : MySpace) (a b : ℝ) : (a + b) • v = a • v + b • v := by
   ext
   change (a + b) * v.x = a * v.x + b * v.x
@@ -21,7 +23,7 @@ Statement (v : MySpace) (a b : ℝ) : (a + b) • v = a • v + b • v := by
 Conclusion ""
 
 NewTactic ring
-NewTheorem vector_smul_add
+NewTheorem MySpace.vector_smul_add
 
 DisabledTactic simp
 DisabledTheorem add_mul mul_add

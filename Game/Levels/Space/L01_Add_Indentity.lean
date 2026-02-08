@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (v : MySpace) : v + (0 : MySpace) = v := by
   ext
   change v.x + 0 = v.x
@@ -20,8 +22,8 @@ Statement (v : MySpace) : v + (0 : MySpace) = v := by
 
 Conclusion ""
 
-NewTactic ext rw change rfl exact apply
+NewTactic ext rw change rfl
 NewTheorem add_zero zero_add add_neg_cancel neg_add_cancel add_comm add_assoc one_mul mul_one mul_add add_mul mul_assoc
 NewDefinition MySpace
 
-NewHiddenTactic rewrite nth_rewrite rwa exact assumption
+NewHiddenTactic rewrite nth_rewrite rwa exact assumption exact apply nth_rw

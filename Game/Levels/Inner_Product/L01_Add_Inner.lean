@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open inner_product
+open my_inner
 
 Statement (u v w : MySpace) : my_inner (u + v) w = ≪u, w≫ + ≪v, w≫ := by
   rw [inner_comm]
@@ -20,5 +20,5 @@ Statement (u v w : MySpace) : my_inner (u + v) w = ≪u, w≫ + ≪v, w≫ := by
 
 Conclusion ""
 
-NewTheorem inner_comm inner_add inner_smul
-NewDefinition my_inner
+NewTheorem my_inner.inner_comm my_inner.inner_add my_inner.inner_smul
+NewDefinition my_inner.my_inner

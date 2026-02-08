@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (v : MySpace) : (1 : ℝ) • v = v := by
   ext
   change 1 * v.x = v.x
@@ -20,6 +22,6 @@ Statement (v : MySpace) : (1 : ℝ) • v = v := by
 
 Conclusion ""
 
-NewTheorem vector_add_assoc
+NewTheorem MySpace.vector_add_assoc
 
 DisabledTactic simp

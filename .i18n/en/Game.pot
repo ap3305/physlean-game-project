@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-05\n"
+"POT-Creation-Date: 2026-02-08\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -57,6 +57,13 @@ msgstr ""
 #: Game.Levels.Inner_Product.L02_Inner_Zero
 #: Game.Levels.Inner_Product.L02_Inner_Zero
 #: Game.Levels.Inner_Product
+#: Game.Levels.Spacetime.L01_Inner_Applicable
+#: Game.Levels.Spacetime.L01_Inner_Applicable
+#: Game.Levels.Spacetime.L01_Inner_Applicable
+#: Game.Levels.Spacetime.L02_Unit_c
+#: Game.Levels.Spacetime.L02_Unit_c
+#: Game.Levels.Spacetime.L02_Unit_c
+#: Game.Levels.Spacetime
 msgid ""
 msgstr ""
 
@@ -76,47 +83,6 @@ msgstr ""
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
 
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-msgid "some description"
-msgstr ""
-
 #: Game
 msgid "Here you can put additional information about the game. It is accessible\n"
 "from the starting through the drop-down menu.\n"
@@ -124,6 +90,57 @@ msgid "Here you can put additional information about the game. It is accessible\
 "For example: Game version, Credits, Link to Github and Zulip, etc.\n"
 "\n"
 "Use **markdown**."
+msgstr ""
+
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Time.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Spacetime.TheoremDocs
+msgid "some description"
 msgstr ""
 
 #: Game.Levels.Time
@@ -147,6 +164,10 @@ msgstr ""
 
 #: Game.Levels.Space.L03_Add_Comm
 msgid "Back and Forth"
+msgstr ""
+
+#: Game.Levels.Spacetime
+msgid "Minkowski Spacetime"
 msgstr ""
 
 #: Game

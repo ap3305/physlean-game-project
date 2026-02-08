@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open inner_product
+open my_inner
 
 Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + ≪v, v≫ := by
   rw [inner_add, add_inner, add_inner]
@@ -18,4 +18,4 @@ Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + �
 
 Conclusion ""
 
-NewTheorem inner_neg
+NewTheorem my_inner.inner_neg

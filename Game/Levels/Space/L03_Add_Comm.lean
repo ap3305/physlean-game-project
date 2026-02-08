@@ -9,6 +9,8 @@ Title "Back and Forth"
 
 Introduction ""
 
+open MySpace
+
 Statement (u v : MySpace) : u + v = v + u := by
   ext
   all_goals
@@ -18,4 +20,4 @@ Statement (u v : MySpace) : u + v = v + u := by
 Conclusion ""
 
 NewTactic simp all_goals
-NewTheorem vector_add_inv
+NewTheorem MySpace.vector_add_inv

@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open inner_product
+open my_inner
 
 Statement (
   preamble :=
@@ -30,4 +30,4 @@ Statement (
 
 Conclusion ""
 
-NewTheorem inner_zero
+NewTheorem my_inner.inner_zero

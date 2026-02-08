@@ -3,7 +3,7 @@ import Game.Theorems.Spacetime.Theorems
 import Game.Theorems.Spacetime.TheoremDocs
 
 World "Spacetime"
-Level 1
+Level 2
 
 Title ""
 
@@ -30,6 +30,3 @@ Statement (
   ring
 
 Conclusion ""
-
-
-NewDefinition MySpacetime

@@ -9,6 +9,8 @@ Title ""
 
 Introduction ""
 
+open MySpace
+
 Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
   change a * (u.x + v.x) = a * u.x + a * v.x
@@ -20,6 +22,6 @@ Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
 
 Conclusion ""
 
-NewTheorem vector_smul_one
+NewTheorem MySpace.vector_smul_one
 
 DisabledTactic simp
