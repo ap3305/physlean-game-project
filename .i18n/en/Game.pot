@@ -126,6 +126,7 @@ msgstr ""
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
