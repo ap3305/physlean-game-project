@@ -37,7 +37,7 @@ some description
 TacticDoc exact
 
 /--
-some description
+Solves the goal if it is the same as an assumption.
 -/
 TacticDoc assumption
 
@@ -47,7 +47,7 @@ some description
 TacticDoc apply
 
 /--
-some description
+Applies to subsequent tactic to every active goal. For example `all_goals simp` applies `simp` to every active goal.
 -/
 TacticDoc all_goals
 

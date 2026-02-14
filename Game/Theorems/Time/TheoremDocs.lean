@@ -9,7 +9,7 @@ TacticDoc norm_num
 
 
 /--
-some description
+`is_past t`
 -/
 TheoremDoc is_past as "is_past" in "Time"
 
@@ -26,6 +26,6 @@ TheoremDoc is_future as "is_future" in "Time"
 
 
 /--
-some description
+`MyTime` is a type representing
 -/
 DefinitionDoc MyTime as "MyTime"
