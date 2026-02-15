@@ -1,15 +1,15 @@
 import Game.Metadata
-import Game.Theorems.Inner_Product.Theorems
-import Game.Theorems.Inner_Product.TheoremDocs
+import Game.Theorems.Bilinear.Theorems
+import Game.Theorems.Bilinear.TheoremDocs
 
-World "Inner_Product"
+World "Bilinear"
 Level 3
 
 Title ""
 
 Introduction ""
 
-open my_inner
+open my_bilinear
 
 Statement (
   preamble :=
@@ -22,12 +22,9 @@ Statement (
   simp
   simp
   rw [h]
-  rw [inner_comm]
-  rw [inner_smul]
+  rw [bilinear_smul]
   norm_num
-  rw [inner_comm]
-
 
 Conclusion ""
 
-NewTheorem my_inner.inner_zero
+NewTheorem my_bilinear.bilinear_zero

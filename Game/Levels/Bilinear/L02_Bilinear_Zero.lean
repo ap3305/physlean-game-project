@@ -1,15 +1,15 @@
 import Game.Metadata
-import Game.Theorems.Inner_Product.Theorems
-import Game.Theorems.Inner_Product.TheoremDocs
+import Game.Theorems.Bilinear.Theorems
+import Game.Theorems.Bilinear.TheoremDocs
 
-World "Inner_Product"
+World "Bilinear"
 Level 2
 
 Title ""
 
 Introduction ""
 
-open my_inner
+open my_bilinear
 
 Statement (
   preamble :=
@@ -18,11 +18,11 @@ Statement (
     rotate_right
 ) (v : MySpace) : (≪v, 0≫ = 0) ∧ (≪v, 0≫ = ≪v, 0+0≫) := by
   vector_simp
-  rw [inner_add] at h
+  rw [bilinear_add] at h
   nth_rw 1 [← add_zero ≪v, 0≫] at h
   simp at h
   exact h
 
 Conclusion ""
 
-NewTheorem my_inner.add_inner my_inner.smul_inner
+NewTheorem my_bilinear.add_bilinear my_bilinear.smul_bilinear

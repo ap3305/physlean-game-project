@@ -16,16 +16,16 @@ Statement (
     constructor
     constructor
 ) (u v w : MySpacetime) (a : ℝ) : ((≪u, v≫ = ≪v, u≫) ∧ (≪u, v + w≫ = ≪u, v≫ + ≪u, w≫)) ∧ (≪a • u, v≫ = a * ≪u, v≫) := by
-  rw [my_inner]
-  rw [my_inner]
+  rw [my_bilinear]
+  rw [my_bilinear]
   ring
-  rw [my_inner]
-  rw [my_inner]
-  rw [my_inner]
+  rw [my_bilinear]
+  rw [my_bilinear]
+  rw [my_bilinear]
   simp
   ring
-  rw [my_inner]
-  rw [my_inner]
+  rw [my_bilinear]
+  rw [my_bilinear]
   simp
   ring
 

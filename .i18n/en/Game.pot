@@ -1,15 +1,15 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-08\n"
+"POT-Creation-Date: 2026-02-15\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
+#: Game.Levels.Bilinear
+msgid "Bilinear World"
 msgstr ""
 
 #: Game
@@ -50,16 +50,22 @@ msgstr ""
 #: Game.Levels.Time.L02_Exclusivity
 #: Game.Levels.Time.L02_Exclusivity
 #: Game.Levels.Time
-#: Game.Levels.Inner_Product.L01_Add_Inner
-#: Game.Levels.Inner_Product.L01_Add_Inner
-#: Game.Levels.Inner_Product.L01_Add_Inner
-#: Game.Levels.Inner_Product.L02_Inner_Zero
-#: Game.Levels.Inner_Product.L02_Inner_Zero
-#: Game.Levels.Inner_Product.L02_Inner_Zero
-#: Game.Levels.Inner_Product
-#: Game.Levels.Spacetime.L01_Inner_Applicable
-#: Game.Levels.Spacetime.L01_Inner_Applicable
-#: Game.Levels.Spacetime.L01_Inner_Applicable
+#: Game.Levels.Bilinear.L01_Add_Bilinear
+#: Game.Levels.Bilinear.L01_Add_Bilinear
+#: Game.Levels.Bilinear.L01_Add_Bilinear
+#: Game.Levels.Bilinear.L02_Bilinear_Zero
+#: Game.Levels.Bilinear.L02_Bilinear_Zero
+#: Game.Levels.Bilinear.L02_Bilinear_Zero
+#: Game.Levels.Bilinear.L03_Bilinear_Neg
+#: Game.Levels.Bilinear.L03_Bilinear_Neg
+#: Game.Levels.Bilinear.L03_Bilinear_Neg
+#: Game.Levels.Bilinear.L04_Bilinear_Self
+#: Game.Levels.Bilinear.L04_Bilinear_Self
+#: Game.Levels.Bilinear.L04_Bilinear_Self
+#: Game.Levels.Bilinear
+#: Game.Levels.Spacetime.L01_bilinear_Applicable
+#: Game.Levels.Spacetime.L01_bilinear_Applicable
+#: Game.Levels.Spacetime.L01_bilinear_Applicable
 #: Game.Levels.Spacetime.L02_Unit_c
 #: Game.Levels.Spacetime.L02_Unit_c
 #: Game.Levels.Spacetime.L02_Unit_c
@@ -71,16 +77,101 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
-#: Game
-msgid "Hello World Game"
-msgstr ""
-
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
+#. §0: `vector_add_comm u v`
+#. §1: `u + v = v + u`
+#. §2: `u v w`
+#. §3: `MySpace`
+#. §4: `MySpacetime`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 are 3 dimensional vectors of type §3 or 4 dimensional vectors of type §4."
+msgstr ""
+
+#. §0: `vector_smul_add u v a`
+#. §1: `a • (u + v) = a • u + a • v`
+#. §2: `u v`
+#. §3: `MySpace`
+#. §4: `MySpacetime`
+#. §5: `a`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 are 3 dimensional vectors of type §3 or 4 dimensional vectors of type §4, and §5 is a real number."
+msgstr ""
+
+#: Game.Levels.Time
+msgid "Time World"
+msgstr ""
+
+#. §0: `is_past t`
+#: Game.Theorems.Time.TheoremDocs
+msgid "§0"
+msgstr ""
+
+#: Game.Theorems.Space.TheoremDocs
+msgid "Solves the goal if it is the same as an assumption."
+msgstr ""
+
+#: Game.Levels.Spacetime
+msgid "Minkowski Spacetime"
+msgstr ""
+
+#. §0: `add_assoc a b c`
+#. §1: `(a + b) + c = a + (b + c)`
+#. §2: `(a + b) + c`
+#. §3: `a + b + c`
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 is also written as §3 in Lean."
+msgstr ""
+
+#. §0: `vector_add_zero v`
+#. §1: `v + 0 = 0`
+#. §2: `v`
+#. §3: `MySpace`
+#. §4: `MySpacetime`
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4."
+msgstr ""
+
+#. §0: `vector_smul_assoc u a b`
+#. §1: `a • (b • u) = (a * b) • u`
+#. §2: `u`
+#. §3: `MySpace`
+#. §4: `MySpacetime`
+#. §5: `a b`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1.\n"
+"§2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4, and §5 are real numbers."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: Game
+msgid "Hello World Game"
+msgstr ""
+
 #: Game
 msgid "You should use this game as a template for your own game and add your own levels."
+msgstr ""
+
+#. §0: `MySpace`
+#. §1: `v : MySpace`
+#. §2: `v`
+#. §3: `v := { x := 1, y := 2, z := 3 }`
+#. §4: `v`
+#. §5: `v.x`
+#. §6: `v.y`
+#. §7: `v.z`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a type representing a 3 dimension vector.\n"
+"- §1 creates a vector §2.\n"
+"- §3 assigns values to §4 which can be accessed with §5, §6, and §7."
 msgstr ""
 
 #: Game
@@ -105,47 +196,25 @@ msgstr ""
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
-#: Game.Theorems.Space.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
 #: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Time.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
-#: Game.Theorems.Inner_Product.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
+#: Game.Theorems.Bilinear.TheoremDocs
 #: Game.Theorems.Spacetime.TheoremDocs
 msgid "some description"
 msgstr ""
 
-#: Game.Levels.Time
-msgid "Time World"
+#. §0: `all_goals simp`
+#. §1: `simp`
+#: Game.Theorems.Space.TheoremDocs
+msgid "Applies to subsequent tactic to every active goal. For example §0 applies §1 to every active goal."
 msgstr ""
 
 #. §0: `u • u ≥ 0`
@@ -155,22 +224,55 @@ msgid "Welcome to the Space World! Here we will lay the foundations for working 
 "The final level of this world will have you prove that §0. That is, the dot product of a vector §1 with itself is never negative."
 msgstr ""
 
+#. §0: `MyTime`
+#: Game.Theorems.Time.TheoremDocs
+msgid "§0 is a type representing"
+msgstr ""
+
 #: Game.Levels.Space
 msgid "Space World"
 msgstr ""
 
-#: Game.Levels.Inner_Product
-msgid "Inner Product World"
+#. §0: `vector_add_assoc u v w`
+#. §1: `(u + v) + w = u + (v + w)`
+#. §2: `(u + v) + w`
+#. §3: `u + v + w`
+#. §4: `u v w`
+#. §5: `MySpace`
+#. §6: `MySpacetime`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 is also written as §3 in Lean.\n"
+"§4 are 3 dimensional vectors of type §5 or 4 dimensional vectors of type §6."
 msgstr ""
 
 #: Game.Levels.Space.L03_Add_Comm
 msgid "Back and Forth"
 msgstr ""
 
-#: Game.Levels.Spacetime
-msgid "Minkowski Spacetime"
+#. §0: `vector_add_smul u a b`
+#. §1: `(a + b) • u = a • u + b • u`
+#. §2: `u`
+#. §3: `MySpace`
+#. §4: `MySpacetime`
+#. §5: `a b`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1 where §2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4, and §5 are real numbers."
 msgstr ""
 
 #: Game
 msgid "Game Template"
+msgstr ""
+
+#. §0: `add_zero a`
+#. §1: `a + 0 = 0`
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 is a proof that §1."
 msgstr ""

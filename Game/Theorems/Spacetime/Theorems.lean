@@ -51,9 +51,9 @@ def my_minkowski : Matrix (Fin 4) (Fin 4) ℝ :=
 
 notation "η" => my_minkowski
 
-def my_inner (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
+def my_bilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
-notation "≪" u ", " v "≫" => my_inner u v
+notation "≪" u ", " v "≫" => my_bilinear u v
 
 
 

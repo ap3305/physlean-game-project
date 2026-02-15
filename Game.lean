@@ -1,6 +1,6 @@
 import Game.Levels.Space
 import Game.Levels.Time
-import Game.Levels.Inner_Product
+import Game.Levels.Bilinear
 import Game.Levels.Spacetime
 
 -- Here's what we'll put on the title screen
