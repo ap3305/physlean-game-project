@@ -5,9 +5,11 @@ import Game.Theorems.Space.TheoremDocs
 World "Space"
 Level 1
 
-Title ""
+Title "Additive Identity"
 
-Introduction ""
+Introduction "In this world we will construct a vector space of 3 dimensional vectors, representing space.
+
+To begin with we establish `MySpace`, with ℝ components of `x`, `y`, and `z`. We can prove all of the results we need by using `ext` to break down `MySpace` vectors into `x y z` and use theorems we already know about real numbers."
 
 open MySpace
 
