@@ -4,11 +4,15 @@ import Game.Levels.Bilinear
 import Game.Levels.Spacetime
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "PhysLean Game"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use **markdown**.
+## Welcome to [Game time]
+In this game we will work up from vectors to properties of points in spacetime, branching at at points along the way.
+
+The contents of this game follow the structure of PhysLean, a physics based Lean library which aims to be the physics counterpart of Mathlib, providing easy access to previous work and a platform to build off of, in this game you will prove some of the existing results PhysLean provides in order to hopefully create a point for you to leap off from into the PhysLean documentation to find any result you may need.
+
+To find out more about PhysLean, you can visit https://physlean.com/.
 "
 
 Info "

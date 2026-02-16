@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-15\n"
+"POT-Creation-Date: 2026-02-16\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -10,11 +10,6 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 
 #: Game.Levels.Bilinear
 msgid "Bilinear World"
-msgstr ""
-
-#: Game
-msgid "This text appears on the starting page where one selects the world/level to play.\n"
-"You can use **markdown**."
 msgstr ""
 
 #: Game.Levels.Space.L01_Add_Indentity
@@ -75,6 +70,15 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
+msgstr ""
+
+#: Game
+msgid "## Welcome to [Game time]\n"
+"In this game we will work up from vectors to properties of points in spacetime, branching at at points along the way.\n"
+"\n"
+"The contents of this game follow the structure of PhysLean, a physics based Lean library which aims to be the physics counterpart of Mathlib, providing easy access to previous work and a platform to build off of, in this game you will prove some of the existing results PhysLean provides in order to hopefully create a point for you to leap off from into the PhysLean documentation to find any result you may need.\n"
+"\n"
+"To find out more about PhysLean, you can visit https://physlean.com/."
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -150,10 +154,6 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
-msgstr ""
-
-#: Game
-msgid "Hello World Game"
 msgstr ""
 
 #: Game
@@ -257,6 +257,10 @@ msgstr ""
 #. §5: `a b`
 #: Game.Theorems.Space.TheoremDocs
 msgid "§0 is a proof that §1 where §2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4, and §5 are real numbers."
+msgstr ""
+
+#: Game
+msgid "PhysLean Game"
 msgstr ""
 
 #: Game
