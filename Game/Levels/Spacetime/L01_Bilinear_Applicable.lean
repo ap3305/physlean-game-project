@@ -1,6 +1,8 @@
 import Game.Metadata
 import Game.Theorems.Spacetime.Theorems
 import Game.Theorems.Spacetime.TheoremDocs
+import Game.Theorems.Bilinear.Theorems
+import Game.Theorems.Time.Theorems
 
 World "Spacetime"
 Level 1
@@ -8,6 +10,8 @@ Level 1
 Title ""
 
 Introduction ""
+
+theorem world_dependant (u v : MySpace) (t : MyTime) : True := by simp
 
 open MySpacetime
 

@@ -7,7 +7,7 @@ Level 2
 
 Title ""
 
-Introduction ""
+Introduction "This level is not yet implemented and is a copy of the previous one"
 
 open MySpacetime
 

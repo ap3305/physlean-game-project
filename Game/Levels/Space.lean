@@ -13,5 +13,4 @@ Title "Space World"
 
 Introduction "
 Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors.
-The final level of this world will have you prove that `u • u ≥ 0`. That is, the dot product of a vector `u` with itself is never negative.
 "
