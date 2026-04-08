@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open my_bilinear
+open MyBilinear
 
 Statement (
   preamble :=
@@ -25,4 +25,4 @@ Statement (
 
 Conclusion ""
 
-NewTheorem my_bilinear.add_bilinear my_bilinear.smul_bilinear
+NewTheorem MyBilinear.add_bilinear MyBilinear.smul_bilinear

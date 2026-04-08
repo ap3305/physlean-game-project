@@ -4,11 +4,11 @@ import Game.Theorems.Space.Theorems
 
 open MySpace
 
-namespace my_bilinear
+namespace MyBilinear
 
-opaque my_bilinear : MySpace -> MySpace -> ℝ
+opaque MyBilinear : MySpace -> MySpace -> ℝ
 
-notation "≪" u ", " v "≫" => my_bilinear u v
+notation "≪" u ", " v "≫" => MyBilinear u v
 
 axiom bilinear_comm (u v : MySpace) : ≪u, v≫ = ≪v, u≫
 axiom bilinear_add (u v w : MySpace) : ≪u, v + w≫ = ≪u, v≫ + ≪u, w≫
@@ -45,4 +45,4 @@ macro "bilinear_simp" : tactic => `(tactic| simp only [
   bilinear_comm, bilinear_add, bilinear_smul, bilinear_zero, bilinear_neg
 ])
 
-end my_bilinear
+end MyBilinear

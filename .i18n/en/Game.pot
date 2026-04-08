@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16\n"
+"POT-Creation-Date: 2026-04-08\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -12,8 +12,6 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 msgid "Bilinear World"
 msgstr ""
 
-#: Game.Levels.Space.L01_Add_Indentity
-#: Game.Levels.Space.L01_Add_Indentity
 #: Game.Levels.Space.L01_Add_Indentity
 #: Game.Levels.Space.L02_Add_Inverse
 #: Game.Levels.Space.L02_Add_Inverse
@@ -58,10 +56,9 @@ msgstr ""
 #: Game.Levels.Bilinear.L04_Bilinear_Self
 #: Game.Levels.Bilinear.L04_Bilinear_Self
 #: Game.Levels.Bilinear
-#: Game.Levels.Spacetime.L01_bilinear_Applicable
-#: Game.Levels.Spacetime.L01_bilinear_Applicable
-#: Game.Levels.Spacetime.L01_bilinear_Applicable
-#: Game.Levels.Spacetime.L02_Unit_c
+#: Game.Levels.Spacetime.L01_Bilinear_Applicable
+#: Game.Levels.Spacetime.L01_Bilinear_Applicable
+#: Game.Levels.Spacetime.L01_Bilinear_Applicable
 #: Game.Levels.Spacetime.L02_Unit_c
 #: Game.Levels.Spacetime.L02_Unit_c
 #: Game.Levels.Spacetime
@@ -85,6 +82,10 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
+#: Game.Levels.Space.L01_Add_Indentity
+msgid "Additive Identity"
+msgstr ""
+
 #. §0: `vector_add_comm u v`
 #. §1: `u + v = v + u`
 #. §2: `u v w`
@@ -92,6 +93,10 @@ msgstr ""
 #. §4: `MySpacetime`
 #: Game.Theorems.Space.TheoremDocs
 msgid "§0 is a proof that §1 where §2 are 3 dimensional vectors of type §3 or 4 dimensional vectors of type §4."
+msgstr ""
+
+#: Game.Levels.Spacetime.L02_Unit_c
+msgid "This level is not yet implemented and is a copy of the previous one"
 msgstr ""
 
 #. §0: `vector_smul_add u v a`
@@ -156,6 +161,19 @@ msgstr ""
 msgid "level completed with warnings… 🎭"
 msgstr ""
 
+#. §0: `MySpace`
+#. §1: `x`
+#. §2: `y`
+#. §3: `z`
+#. §4: `ext`
+#. §5: `MySpace`
+#. §6: `x y z`
+#: Game.Levels.Space.L01_Add_Indentity
+msgid "In this world we will construct a vector space of 3 dimensional vectors, representing space.\n"
+"\n"
+"To begin with we establish §0, with ℝ components of §1, §2, and §3. We can prove all of the results we need by using §4 to break down §5 vectors into §6 and use theorems we already know about real numbers."
+msgstr ""
+
 #: Game
 msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""
@@ -217,13 +235,6 @@ msgstr ""
 msgid "Applies to subsequent tactic to every active goal. For example §0 applies §1 to every active goal."
 msgstr ""
 
-#. §0: `u • u ≥ 0`
-#. §1: `u`
-#: Game.Levels.Space
-msgid "Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors.\n"
-"The final level of this world will have you prove that §0. That is, the dot product of a vector §1 with itself is never negative."
-msgstr ""
-
 #. §0: `MyTime`
 #: Game.Theorems.Time.TheoremDocs
 msgid "§0 is a type representing"
@@ -257,6 +268,10 @@ msgstr ""
 #. §5: `a b`
 #: Game.Theorems.Space.TheoremDocs
 msgid "§0 is a proof that §1 where §2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4, and §5 are real numbers."
+msgstr ""
+
+#: Game.Levels.Space
+msgid "Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors."
 msgstr ""
 
 #: Game

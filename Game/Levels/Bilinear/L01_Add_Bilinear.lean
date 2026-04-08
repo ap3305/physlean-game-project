@@ -9,9 +9,9 @@ Title ""
 
 Introduction ""
 
-open my_bilinear
+open MyBilinear
 
-Statement (u v w : MySpace) : my_bilinear (u + v) w = ≪u, w≫ + ≪v, w≫ := by
+Statement (u v w : MySpace) : MyBilinear (u + v) w = ≪u, w≫ + ≪v, w≫ := by
   rw [bilinear_comm]
   rw [bilinear_add]
   rw [bilinear_comm]
@@ -20,5 +20,5 @@ Statement (u v w : MySpace) : my_bilinear (u + v) w = ≪u, w≫ + ≪v, w≫ :=
 
 Conclusion ""
 
-NewTheorem my_bilinear.bilinear_comm my_bilinear.bilinear_add my_bilinear.bilinear_smul
-NewDefinition my_bilinear.my_bilinear
+NewTheorem MyBilinear.bilinear_comm MyBilinear.bilinear_add MyBilinear.bilinear_smul
+NewDefinition MyBilinear.MyBilinear

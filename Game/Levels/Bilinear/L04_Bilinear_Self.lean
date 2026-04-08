@@ -9,7 +9,7 @@ Title ""
 
 Introduction ""
 
-open my_bilinear
+open MyBilinear
 
 Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + ≪v, v≫ := by
   rw [bilinear_add, add_bilinear, add_bilinear]
@@ -18,4 +18,4 @@ Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + �
 
 Conclusion ""
 
-NewTheorem my_bilinear.bilinear_neg
+NewTheorem MyBilinear.bilinear_neg
