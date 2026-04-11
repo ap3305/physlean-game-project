@@ -70,9 +70,12 @@ notation "η" => my_minkowski
 
 def MyBilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
--- Unused but hopefully will fix world dependancies
-axiom MyBilinear_space (u v : MySpacetime) : MyBilinear u v = u.t * v.t - MyBilinear.MyBilinear u.space v.space
-
 notation "≪" u ", " v "≫" => MyBilinear u v
+
+def is_spacelike (u : MySpacetime) : Prop := ≪u, u≫ < 0
+
+def is_lightlike (u : MySpacetime) : Prop := ≪u, u≫ == 0
+
+def is_timelike (u : MySpacetime) : Prop := ≪u, u≫ > 0
 
 end MySpacetime

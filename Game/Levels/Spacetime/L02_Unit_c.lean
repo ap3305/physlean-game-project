@@ -11,11 +11,7 @@ Introduction "This level is not yet implemented and is a copy of the previous on
 
 open MySpacetime
 
-Statement (
-  preamble :=
-    constructor
-    constructor
-) (u v w : MySpacetime) (a : ℝ) : ((≪u, v≫ = ≪v, u≫) ∧ (≪u, v + w≫ = ≪u, v≫ + ≪u, w≫)) ∧ (≪a • u, v≫ = a * ≪u, v≫) := by
+Statement (u v w : MySpacetime) (a : ℝ) :  := by
   rw [MyBilinear]
   rw [MyBilinear]
   ring
