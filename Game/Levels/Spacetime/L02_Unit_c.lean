@@ -7,22 +7,13 @@ Level 2
 
 Title ""
 
-Introduction "This level is not yet implemented and is a copy of the previous one"
+Introduction "Assume to be 1 unit of space per unit of time"
 
-open MySpacetime
+open MySpacetime MySpacetime.CausalCharacter
 
-Statement (u v w : MySpacetime) (a : ℝ) :  := by
-  rw [MyBilinear]
-  rw [MyBilinear]
-  ring
-  rw [MyBilinear]
-  rw [MyBilinear]
-  rw [MyBilinear]
+Statement (u : MySpacetime) (h: u = { time := ⟨1⟩, space := ⟨1, 0, 0⟩ }) : u.causalCharacter = lightLike := by
+  rw [causalCharacter]
+  rw [h]
   simp
-  ring
-  rw [MyBilinear]
-  rw [MyBilinear]
-  simp
-  ring
 
 Conclusion ""

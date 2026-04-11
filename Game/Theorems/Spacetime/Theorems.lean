@@ -38,10 +38,10 @@ instance : Zero MySpacetime where
 @[simp] lemma smul_time (u : MySpacetime) (a : ℝ) : (a • u).time = a • u.time := rfl
 @[simp] lemma smul_space (u : MySpacetime) (a : ℝ) : (a • u).space = a • u.space := rfl
 
-abbrev x (u : MySpacetime) : ℝ := u.space.x
-abbrev y (u : MySpacetime) : ℝ := u.space.y
-abbrev z (u : MySpacetime) : ℝ := u.space.z
-abbrev t (u : MySpacetime) : ℝ := u.time.val
+@[simp] abbrev x (u : MySpacetime) : ℝ := u.space.x
+@[simp] abbrev y (u : MySpacetime) : ℝ := u.space.y
+@[simp] abbrev z (u : MySpacetime) : ℝ := u.space.z
+@[simp] abbrev t (u : MySpacetime) : ℝ := u.time.val
 
 @[simp] lemma add_t (u v : MySpacetime) : (u + v).t = u.t + v.t := rfl
 @[simp] lemma add_x (u v : MySpacetime) : (u + v).x = u.x + v.x := rfl
@@ -68,6 +68,7 @@ def my_minkowski : Matrix (Fin 4) (Fin 4) ℝ :=
 
 notation "η" => my_minkowski
 
+@[simp]
 def MyBilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
 notation "≪" u ", " v "≫" => MyBilinear u v
@@ -80,7 +81,7 @@ inductive CausalCharacter
   | spaceLike
 deriving DecidableEq
 
-noncomputable def causalCharacter {d : ℕ} (p : MySpacetime) : CausalCharacter :=
+noncomputable def causalCharacter (p : MySpacetime) : CausalCharacter :=
   let v0 := ≪p, p≫
   if v0 = 0 then CausalCharacter.lightLike
   else if 0 < v0 then CausalCharacter.timeLike
