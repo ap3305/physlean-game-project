@@ -9,7 +9,9 @@ Title ""
 
 Introduction ""
 
-Statement (t : MyTime) (h: t.val = 4): is_future t := by
+open MyTime
+
+Statement (t : MyTime) (h: t.val = 4): t.is_future := by
   rw [is_future]
   rw [h]
   norm_num
@@ -18,5 +20,5 @@ Statement (t : MyTime) (h: t.val = 4): is_future t := by
 Conclusion ""
 
 NewTactic norm_num
-NewTheorem is_past is_present is_future
+NewTheorem MyTime.is_past MyTime.is_present MyTime.is_future
 NewDefinition MyTime

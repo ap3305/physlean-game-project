@@ -22,13 +22,13 @@ instance : SMul ℝ MyTime where
 instance : Zero MyTime where
   zero := { val := 0 }
 
-@[simp] lemma add_t (u v : MyTime) : (u + v).val = u.val + v.val := rfl
+@[simp] lemma add_val (u v : MyTime) : (u + v).val = u.val + v.val := rfl
 
-@[simp] lemma zero_t : (0 : MyTime).val = 0 := rfl
+@[simp] lemma zero_val : (0 : MyTime).val = 0 := rfl
 
-@[simp] lemma neg_t (u : MyTime) : (-u).val = -u.val := rfl
+@[simp] lemma neg_val (u : MyTime) : (-u).val = -u.val := rfl
 
-@[simp] lemma smul_t (u : MyTime) (a : ℝ) : (a • u).val = a * u.val := rfl
+@[simp] lemma smul_val (u : MyTime) (a : ℝ) : (a • u).val = a * u.val := rfl
 
 def is_past (t: MyTime) : Prop := t.val < 0
 

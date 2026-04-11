@@ -11,8 +11,6 @@ Title ""
 
 Introduction ""
 
-theorem world_dependant (u v : MySpace) (t : MyTime) : True := by simp
-
 open MySpacetime
 
 Statement (
