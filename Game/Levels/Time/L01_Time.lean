@@ -9,10 +9,10 @@ Title ""
 
 Introduction ""
 
-open MyTime
+open MyTime MyTime.TimeCharacter
 
-Statement (t : MyTime) (h: t.val = 4): t.is_future := by
-  rw [is_future]
+Statement (t : MyTime) (h: t.val = 4): t.timeCharacter = future := by
+  rw [timeCharacter]
   rw [h]
   norm_num
 
@@ -20,5 +20,4 @@ Statement (t : MyTime) (h: t.val = 4): t.is_future := by
 Conclusion ""
 
 NewTactic norm_num
-NewTheorem MyTime.is_past MyTime.is_present MyTime.is_future
 NewDefinition MyTime

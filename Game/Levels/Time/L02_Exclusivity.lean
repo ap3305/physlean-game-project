@@ -9,15 +9,13 @@ Title ""
 
 Introduction ""
 
-open MyTime
+open MyTime MyTime.TimeCharacter
 
-Statement (t : MyTime) (h: t.is_present = True) : ¬(t.is_past ∨ t.is_future) := by
-  rw [is_past, is_future]
-  rw [is_present] at h
-  simp at h
-  simp
-  rw [h]
-
+Statement (t : MyTime) (h: ¬(t.timeCharacter = past)) (g: ¬(t.timeCharacter = future)) : t.timeCharacter = present := by
+  cases f : t.timeCharacter
+  all_goals simp
+  exact h f
+  exact g f
 
 
 Conclusion ""
