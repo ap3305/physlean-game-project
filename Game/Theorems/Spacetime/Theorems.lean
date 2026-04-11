@@ -63,6 +63,57 @@ instance : Zero MySpacetime where
 @[simp] lemma smul_y (u : MySpacetime) (a : ℝ) : (a • u).y = a * u.y := rfl
 @[simp] lemma smul_z (u : MySpacetime) (a : ℝ) : (a • u).z = a * u.z := rfl
 
+
+lemma vector_add_zero (u : MySpacetime) : u + (0 : MySpacetime) = u := by
+  ext
+  all_goals simp
+
+lemma vector_add_inv (u : MySpacetime) : u + (-u) = 0 := by
+  ext
+  all_goals simp
+
+lemma vector_add_comm (u v : MySpacetime) : u + v = v + u := by
+  ext
+  all_goals
+    simp
+    ring
+
+lemma vector_add_assoc (u v w : MySpacetime) : u + (v + w) = (u + v) + w := by
+  ext
+  all_goals
+    simp
+    ring
+
+lemma vector_smul_one (u : MySpacetime) : (1 : ℝ) • u = u := by
+  ext
+  all_goals
+    simp
+
+lemma vector_smul_add (u v : MySpacetime) (a : ℝ) : a • (u + v) = a • u + a • v := by
+  ext
+  all_goals
+    simp
+    ring
+
+lemma vector_add_smul (u : MySpacetime) (a b : ℝ) : (a + b) • u = a • u + b • u := by
+  ext
+  all_goals
+    simp
+    ring
+
+lemma vector_smul_assoc (u : MySpacetime) (a b : ℝ) : a • (b • u) = (a * b) • u := by
+  ext
+  all_goals
+    simp
+    ring
+
+macro "vector_simp" : tactic => `(tactic| simp only [
+  vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
+  vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
+] <;> ring <;> simp only [vector_add_comm]
+)
+
+
 def my_minkowski : Matrix (Fin 4) (Fin 4) ℝ :=
   Matrix.diagonal ![1, -1, -1, -1]
 
@@ -72,6 +123,54 @@ notation "η" => my_minkowski
 def MyBilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
 notation "≪" u ", " v "≫" => MyBilinear u v
+
+
+lemma bilinear_comm (u v : MySpacetime) : ≪u, v≫ = ≪v, u≫ := by
+  simp
+  ring
+
+lemma bilinear_add (u v w : MySpacetime) : ≪u, v + w≫ = ≪u, v≫ + ≪u, w≫ := by
+  simp
+  ring
+
+lemma bilinear_smul (u v : MySpacetime) (a : ℝ) : ≪u, a • v≫ = a * ≪u, v≫ := by
+  simp
+  ring
+
+lemma add_bilinear (u v w : MySpacetime) : ≪u + v, w≫ = ≪u, w≫ + ≪v, w≫ := by
+  simp only [bilinear_comm, bilinear_add]
+
+lemma smul_bilinear (u v : MySpacetime) (a : ℝ) : ≪a • u, v≫ = a * ≪u, v≫ := by
+  simp only [bilinear_comm, bilinear_smul]
+
+lemma bilinear_zero (v : MySpacetime) : ≪v, 0≫ = 0 := by
+  have h : ≪v, 0≫ = ≪v, 0≫ + ≪v, 0≫ := by
+    nth_rewrite 1 [← vector_add_zero (0 : MySpacetime)]
+    rw [bilinear_add]
+  simp
+
+lemma bilinear_neg (u v : MySpacetime) : ≪u, -v≫ = -≪u, v≫ := by
+  have h : -v = (-1 : ℝ) • v := by
+    ext <;> simp
+  rw [h]
+  rw [bilinear_smul]
+  norm_num
+
+lemma bilinear_self_add (u v : MySpacetime) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + ≪v, v≫ := by
+  simp only [bilinear_comm, bilinear_add]
+  ring
+
+
+macro "bilinear_simp" : tactic => `(tactic| simp only [
+  bilinear_comm, bilinear_add, bilinear_smul, bilinear_zero, bilinear_neg
+])
+
+
+
+
+
+
+
 
 
 -- https://github.com/leanprover-community/physlib/blob/9ca1ee1d0cac43391399fcdc9e9fca8c94c17057/Physlib/Relativity/Tensors/RealTensor/Vector/Causality/Basic.lean#L25-L31

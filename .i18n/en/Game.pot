@@ -95,10 +95,6 @@ msgstr ""
 msgid "§0 is a proof that §1 where §2 are 3 dimensional vectors of type §3 or 4 dimensional vectors of type §4."
 msgstr ""
 
-#: Game.Levels.Spacetime.L02_Unit_c
-msgid "This level is not yet implemented and is a copy of the previous one"
-msgstr ""
-
 #. §0: `vector_smul_add u v a`
 #. §1: `a • (u + v) = a • u + a • v`
 #. §2: `u v`
@@ -116,6 +112,10 @@ msgstr ""
 #. §0: `is_past t`
 #: Game.Theorems.Time.TheoremDocs
 msgid "§0"
+msgstr ""
+
+#: Game.Levels.Spacetime.L02_Unit_c
+msgid "Assume to be 1 unit of space per unit of time"
 msgstr ""
 
 #: Game.Theorems.Space.TheoremDocs
