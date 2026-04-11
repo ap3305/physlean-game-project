@@ -2,6 +2,7 @@ import GameServer
 import Game.Metadata
 import Game.Theorems.Space.Theorems
 import Game.Theorems.Time.Theorems
+import Game.Theorems.Bilinear.Theorems
 
 @[ext]
 structure MySpacetime where
@@ -69,8 +70,9 @@ notation "η" => my_minkowski
 
 def MyBilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z
 
+-- Unused but hopefully will fix world dependancies
+axiom MyBilinear_space (u v : MySpacetime) : MyBilinear u v = u.t * v.t - MyBilinear.MyBilinear u.space v.space
+
 notation "≪" u ", " v "≫" => MyBilinear u v
-
-
 
 end MySpacetime
