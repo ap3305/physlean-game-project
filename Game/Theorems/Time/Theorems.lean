@@ -30,10 +30,15 @@ instance : Zero MyTime where
 
 @[simp] lemma smul_val (u : MyTime) (a : ℝ) : (a • u).val = a * u.val := rfl
 
-def is_past (t : MyTime) : Prop := t.val < 0
+inductive TimeCharacter
+  | past
+  | present
+  | future
+deriving DecidableEq
 
-def is_present (t : MyTime) : Prop := t.val == 0
-
-def is_future (t : MyTime) : Prop := t.val > 0
+noncomputable def timeCharacter (t : MyTime) : TimeCharacter :=
+  if t.val = 0 then TimeCharacter.present
+  else if 0 < t.val then TimeCharacter.future
+  else TimeCharacter.past
 
 end MyTime

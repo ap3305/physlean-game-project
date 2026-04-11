@@ -72,10 +72,18 @@ def MyBilinear (u v : MySpacetime) : ℝ := u.t * v.t - u.x * v.x - u.y * v.y - 
 
 notation "≪" u ", " v "≫" => MyBilinear u v
 
-def is_spacelike (u : MySpacetime) : Prop := ≪u, u≫ < 0
 
-def is_lightlike (u : MySpacetime) : Prop := ≪u, u≫ == 0
+-- https://github.com/leanprover-community/physlib/blob/9ca1ee1d0cac43391399fcdc9e9fca8c94c17057/Physlib/Relativity/Tensors/RealTensor/Vector/Causality/Basic.lean#L25-L31
+inductive CausalCharacter
+  | timeLike
+  | lightLike
+  | spaceLike
+deriving DecidableEq
 
-def is_timelike (u : MySpacetime) : Prop := ≪u, u≫ > 0
+noncomputable def causalCharacter {d : ℕ} (p : MySpacetime) : CausalCharacter :=
+  let v0 := ≪p, p≫
+  if v0 = 0 then CausalCharacter.lightLike
+  else if 0 < v0 then CausalCharacter.timeLike
+  else CausalCharacter.spaceLike
 
 end MySpacetime
