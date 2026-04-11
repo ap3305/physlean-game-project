@@ -18,18 +18,11 @@ Statement (
     constructor
     constructor
 ) (u v w : MySpacetime) (a : ℝ) : ((≪u, v≫ = ≪v, u≫) ∧ (≪u, v + w≫ = ≪u, v≫ + ≪u, w≫)) ∧ (≪a • u, v≫ = a * ≪u, v≫) := by
-  rw [MyBilinear]
-  rw [MyBilinear]
+  all_goals unfold MyBilinear
   ring
-  rw [MyBilinear]
-  rw [MyBilinear]
-  rw [MyBilinear]
-  simp
-  ring
-  rw [MyBilinear]
-  rw [MyBilinear]
-  simp
-  ring
+  all_goals
+    simp
+    ring
 
 Conclusion ""
 
