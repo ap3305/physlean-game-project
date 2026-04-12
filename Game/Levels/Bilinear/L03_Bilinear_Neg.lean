@@ -23,7 +23,7 @@ Statement (
   simp
   rw [h]
   rw [bilinear_smul]
-  norm_num
+  ring
 
 Conclusion ""
 
