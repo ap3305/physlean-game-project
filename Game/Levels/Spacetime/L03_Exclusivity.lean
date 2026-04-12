@@ -12,9 +12,12 @@ Introduction ""
 open MySpacetime MySpacetime.CausalCharacter
 
 Statement (u : MySpacetime) (h: ¬(u.causalCharacter = timeLike)) (g: ¬(u.causalCharacter = spaceLike)) : u.causalCharacter = lightLike := by
-  cases f : u.causalCharacter
-  all_goals simp
-  exact h f
-  exact g f
+  rw [causalCharacter]
+  split_ifs
+  rfl
+  all_goals
+    rw [causalCharacter] at *
+    split_ifs at *
+    contradiction
 
 Conclusion ""

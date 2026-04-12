@@ -12,17 +12,16 @@ Introduction ""
 open MySpacetime MySpacetime.CausalCharacter
 
 Statement (u v : MySpacetime) (a : ℝ) (h: u = a • v) (g: v.causalCharacter = lightLike) : u.causalCharacter = lightLike := by
-  rw [causalCharacter] at g
-  split at g
-  rename_i hv
-  rw [h]
   rw [causalCharacter]
-  bilinear_simp
-  rw [hv]
-  ring
-  simp
-  split at g
-  contradiction
-  contradiction
+  split_ifs
+  rfl
+  all_goals
+    rw [causalCharacter] at g
+    split_ifs at g
+    rename_i ha hb hc
+    rw [h] at ha
+    simp_bilinear at ha
+    rw [hc] at ha
+    norm_num at ha
 
 Conclusion ""

@@ -13,10 +13,10 @@ Introduction ""
 open MySpace
 
 Statement (u v : MySpace) (a b c : ℝ) : (a * b) • (c • u + v) + (a * (b + c)) • v = a • ((b * c) • u + ((2 : ℝ) * b + c) • v) := by
-  vector_simp
+  simp_vector
 
 
 Conclusion ""
 
-NewTactic vector_simp
+NewTactic simp_vector
 NewTheorem MySpace.vector_smul_assoc

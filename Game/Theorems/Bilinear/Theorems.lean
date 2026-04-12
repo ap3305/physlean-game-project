@@ -41,8 +41,8 @@ lemma bilinear_self_add (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * 
   ring
 
 
-macro "bilinear_simp" : tactic => `(tactic| simp only [
+macro "simp_bilinear" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| simp only [
   bilinear_comm, bilinear_add, bilinear_smul, bilinear_zero, bilinear_neg
-])
+] $(loc)?)
 
 end MyBilinear

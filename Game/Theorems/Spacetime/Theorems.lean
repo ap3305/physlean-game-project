@@ -107,10 +107,10 @@ lemma vector_smul_assoc (u : MySpacetime) (a b : ℝ) : a • (b • u) = (a * b
     simp
     ring
 
-macro "vector_simp" : tactic => `(tactic| simp only [
+macro "vector_simp" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| simp only [
   vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
   vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
-] <;> ring <;> simp only [vector_add_comm]
+] $(loc)? <;> ring <;> simp only [vector_add_comm]
 )
 
 
@@ -161,9 +161,9 @@ lemma bilinear_self_add (u v : MySpacetime) : ≪u + v, u + v≫ = ≪u, u≫ + 
   ring
 
 
-macro "bilinear_simp" : tactic => `(tactic| simp only [
+macro "simp_bilinear" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| simp only [
   bilinear_comm, bilinear_add, bilinear_smul, bilinear_zero, bilinear_neg
-])
+] $(loc)?)
 
 
 

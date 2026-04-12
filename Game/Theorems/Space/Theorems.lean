@@ -87,10 +87,10 @@ lemma vector_smul_assoc (u : MySpace) (a b : ℝ) : a • (b • u) = (a * b) �
     simp
     ring
 
-macro "vector_simp" : tactic => `(tactic| simp only [
+macro "simp_vector" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| simp only [
   vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
   vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
-] <;> ring <;> simp only [vector_add_comm]
+] $(loc)? <;> ring <;> simp only [vector_add_comm]
 )
 
 end MySpace
