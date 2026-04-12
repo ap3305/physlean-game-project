@@ -14,10 +14,10 @@ open MyBilinear
 Statement (
   preamble :=
     constructor
-    have h : ≪v, 0≫ = ≪v, 0 + 0≫ := by vector_simp
+    have h : ≪v, 0≫ = ≪v, 0 + 0≫ := by simp_vector
     rotate_right
 ) (v : MySpace) : (≪v, 0≫ = 0) ∧ (≪v, 0≫ = ≪v, 0+0≫) := by
-  vector_simp
+  simp_vector
   rw [bilinear_add] at h
   nth_rw 1 [← add_zero ≪v, 0≫] at h
   simp at h
