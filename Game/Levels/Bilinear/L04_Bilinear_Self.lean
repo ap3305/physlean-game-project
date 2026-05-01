@@ -5,7 +5,7 @@ import Game.Theorems.Bilinear.TheoremDocs
 World "Bilinear"
 Level 4
 
-Title ""
+Title "bilinear_self"
 
 Introduction ""
 

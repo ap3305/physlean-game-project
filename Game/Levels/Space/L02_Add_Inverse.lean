@@ -5,7 +5,7 @@ import Game.Theorems.Space.TheoremDocs
 World "Space"
 Level 2
 
-Title ""
+Title "vector_add_inv"
 
 Introduction ""
 

@@ -5,7 +5,7 @@ import Game.Theorems.Time.TheoremDocs
 World "Time"
 Level 2
 
-Title ""
+Title "Exclusivity"
 
 Introduction ""
 

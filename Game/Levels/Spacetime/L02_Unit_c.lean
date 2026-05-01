@@ -5,7 +5,7 @@ import Game.Theorems.Spacetime.TheoremDocs
 World "Spacetime"
 Level 2
 
-Title ""
+Title "causalCharacter"
 
 Introduction "Assume to be 1 unit of space per unit of time"
 

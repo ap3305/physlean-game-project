@@ -5,7 +5,7 @@ import Game.Theorems.Spacetime.TheoremDocs
 World "Spacetime"
 Level 4
 
-Title ""
+Title "Scalar lightLike"
 
 Introduction ""
 

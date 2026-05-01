@@ -5,7 +5,7 @@ import Game.Theorems.Space.TheoremDocs
 World "Space"
 Level 7
 
-Title ""
+Title "vector_add_smul"
 
 Introduction ""
 

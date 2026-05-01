@@ -5,7 +5,7 @@ import Game.Theorems.Space.TheoremDocs
 World "Space"
 Level 1
 
-Title "Additive Identity"
+Title "vector_add_zero"
 
 Introduction "In this world we will construct a vector space of 3 dimensional vectors, representing space.
 

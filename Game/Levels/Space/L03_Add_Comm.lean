@@ -5,7 +5,7 @@ import Game.Theorems.Space.TheoremDocs
 World "Space"
 Level 3
 
-Title "Back and Forth"
+Title "vector_add_comm"
 
 Introduction ""
 

@@ -5,7 +5,7 @@ import Game.Theorems.Spacetime.TheoremDocs
 World "Spacetime"
 Level 3
 
-Title ""
+Title "Exclusivity Again"
 
 Introduction ""
 

@@ -5,7 +5,7 @@ import Game.Theorems.Time.TheoremDocs
 World "Time"
 Level 1
 
-Title ""
+Title "MyTime"
 
 Introduction ""
 

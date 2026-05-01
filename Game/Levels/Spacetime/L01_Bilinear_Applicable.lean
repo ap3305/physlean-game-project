@@ -7,7 +7,7 @@ import Game.Theorems.Time.Theorems
 World "Spacetime"
 Level 1
 
-Title ""
+Title "Minkowski Product"
 
 Introduction ""
 

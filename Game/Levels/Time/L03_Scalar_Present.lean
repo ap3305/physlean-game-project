@@ -5,7 +5,7 @@ import Game.Theorems.Time.TheoremDocs
 World "Time"
 Level 3
 
-Title ""
+Title "Scalar present"
 
 Introduction ""
 
