@@ -2,47 +2,50 @@ import GameServer
 import Game.Theorems.Space.Theorems
 
 /--
-some description
+`rw` or "rewrite" allows you to substitute terms. If you have a goal with the term `a - 2b` and a theorem or assumption `h` that `a - 2b = b` then `rw [h]` will change every instance of `a - 2b` into just `b`.
+- `repeat rw [h]` will keep rewriting until there is nothing matching `h`. `a - 2 * (a - 2 * (a - 2b))` will turn into just `b`.
+- `nth_rewrite n [h]` will only rewrite the nth instance of `h` in your goal.
+- `rw [h] at g` will apply `rw [h]` to the hypothosis `g`.
 -/
 TacticDoc rw
 
 /--
-some description
+`rfl` is a proof of the reflexivity of equality, that `x = x` is true.
 -/
 TacticDoc rfl
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc rewrite
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc nth_rewrite
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc nth_rw
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc rwa
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc exact
 
 /--
-Solves the goal if it is the same as an assumption.
+Hidden Tactic
 -/
 TacticDoc assumption
 
 /--
-some description
+Hidden Tactic
 -/
 TacticDoc apply
 
@@ -52,27 +55,27 @@ Applies to subsequent tactic to every active goal. For example `all_goals simp` 
 TacticDoc all_goals
 
 /--
-some description
+Among other things, `ext` will expand a proof concerning a vector into that same proof for each component of that vector. Note this only gives the "same" proof when that is how the vector operation is defined, which is always the case in this game.
 -/
 TacticDoc ext
 
 /--
-some description
+`change` allows you the to "change" the goal into a different form, as long as the equivlence between those forms can be proved by `rfl`.
 -/
 TacticDoc change
 
 /--
-some description
+`simp` is a powerful tactic that "simplifies" a goal using every theorem available to it and a little bit of logic as to not get stuck. Note that we do not give `simp` access to any of the theorems we prove in this game, what would be the fun in that?
 -/
 TacticDoc simp
 
 /--
-some description
+`ring` will prove any goal which relies on the properties of a ring group. The most prominent example of such a group is addition and multiplcation.
 -/
 TacticDoc ring
 
 /--
-some description
+Our own home grown version of `simp`. `simp_vector` is a macro which runs a version of `simp` which only knows the theorems about vectors we have proven in this game.
 -/
 TacticDoc simp_vector
 
@@ -187,7 +190,7 @@ TheoremDoc MySpace.vector_smul_assoc as "vector_smul_assoc" in "Vectors"
 
 /--
 `MySpace` is a type representing a 3 dimension vector.
-- `v : MySpace` creates a vector `v`.
-- `v := { x := 1, y := 2, z := 3 }` assigns values to `v` which can be accessed with `v.x`, `v.y`, and `v.z`.
+- `v : MySpace` creates a vector `v` of type `MySpace`.
+- `v := { x := ?, y := ?, z := ? }` assigns values of type `ℝ` to `v` which can be accessed with `v.x`, `v.y`, and `v.z`.
 -/
 DefinitionDoc MySpace as "MySpace"

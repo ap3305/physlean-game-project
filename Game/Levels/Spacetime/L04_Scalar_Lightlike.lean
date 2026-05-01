@@ -21,7 +21,7 @@ Statement (u v : MySpacetime) (a : ℝ) (h: u = a • v) (g: v.causalCharacter =
     split_ifs at g
     rename_i ha hb hc
     rw [h] at ha
-    simp_bilinear at ha
+    repeat rw [bilinear_comm, bilinear_smul] at ha
     rw [hc] at ha
     norm_num at ha
 

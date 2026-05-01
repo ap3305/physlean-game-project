@@ -167,12 +167,6 @@ macro "simp_bilinear" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| s
 
 
 
-
-
-
-
-
-
 -- https://github.com/leanprover-community/physlib/blob/9ca1ee1d0cac43391399fcdc9e9fca8c94c17057/Physlib/Relativity/Tensors/RealTensor/Vector/Causality/Basic.lean#L25-L31
 inductive CausalCharacter
   | timeLike
