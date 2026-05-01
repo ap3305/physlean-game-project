@@ -13,12 +13,12 @@ open MyTime MyTime.TimeCharacter
 
 Statement (t u : MyTime) (a : ℝ) (h: t = a • u) (g: u.timeCharacter = present) : t.timeCharacter = present := by
   rw [timeCharacter]
-  split_ifs
+  split_ifs with ha
   rfl
   all_goals
     rw [timeCharacter] at g
     split_ifs at g
-    rename_i ha hb hc
+    rename_i hb hc
   rw [h] at hb
   simp at hb
   rw [hc] at hb

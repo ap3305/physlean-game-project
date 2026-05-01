@@ -12,6 +12,7 @@ Introduction ""
 open MySpacetime MySpacetime.CausalCharacter
 
 Statement (u v : MySpacetime) (a : ℝ) (h: u = a • v) (g: v.causalCharacter = lightLike) : u.causalCharacter = lightLike := by
+  Hint (hidden := true) "If you're stuck have a look at what you did in level 3 in the Light World."
   rw [causalCharacter]
   split_ifs
   rfl

@@ -18,6 +18,7 @@ Statement (
     rotate_right
 ) (v : MySpace) : (≪v, 0≫ = 0) ∧ (≪v, 0≫ = ≪v, 0+0≫) := by
   simp_vector
+  Hint (hidden := true) "It may be useful to make sure you're confident with how nth_rw works. If you're not sure check the documentation for rw."
   rw [bilinear_add] at h
   nth_rw 1 [← add_zero ≪v, 0≫] at h
   simp at h

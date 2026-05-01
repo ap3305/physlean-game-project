@@ -13,6 +13,7 @@ open MySpace
 
 Statement (u v : MySpace) (a : ℝ) : a • (u + v) = a • u + a • v := by
   ext
+  Hint (hidden := true) "Your goal needs to be of the form $a * (u.x + v.x) = a * u.x + a * v.x$"
   change a * (u.x + v.x) = a * u.x + a * v.x
   rw [mul_add]
   change a * (u.y + v.y) = a * u.y + a * v.y

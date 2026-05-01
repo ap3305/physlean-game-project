@@ -15,6 +15,8 @@ open MySpace
 
 Statement (v : MySpace) : v + (0 : MySpace) = v := by
   ext
+  Hint "We can now use the change tactic to expand the brackets as long as the new form can be proven by rfl"
+  Hint (hidden := true) "Try $v.x + 0 = v.x$."
   change v.x + 0 = v.x
   rw [add_zero]
   change v.y + 0 = v.y

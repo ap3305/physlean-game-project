@@ -6,7 +6,7 @@ import Mathlib.Tactic.Abel
 World "Space"
 Level 9
 
-Title ""
+Title "simp_vector"
 
 Introduction ""
 

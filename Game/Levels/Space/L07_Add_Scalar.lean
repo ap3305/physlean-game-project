@@ -13,6 +13,7 @@ open MySpace
 
 Statement (v : MySpace) (a b : ℝ) : (a + b) • v = a • v + b • v := by
   ext
+  Hint (hidden := true) "Your goal needs to be of the form $(a + b) * v.x = a * v.x + b * v.x$"
   change (a + b) * v.x = a * v.x + b * v.x
   ring
   change (a + b) * v.y = a * v.y + b * v.y
