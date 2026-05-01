@@ -6,7 +6,22 @@ import Game.Theorems.Time.Theorems
 -/
 TacticDoc norm_num
 
+/--
+`split_ifs` splits an `if then else` statement into a goal for each outcome.
 
+Be warned, `split_ifs` may create hypotheses which are inaccessible that you would like to use. Should this happen you should turn to `rename i`.
+-/
+TacticDoc split_ifs
+
+/--
+`contradiction` will solve a goal if two hypothoseis directly contradict each other or if one hypothosis is `false`. For example `h: false` or `h: a` and `g: ¬a`.
+-/
+TacticDoc contradiction
+
+/--
+`rename_i` allows you give names to hypotheses which are normally inaccessible, such as those created by `split_ifs`.
+-/
+TacticDoc rename_i
 
 
 /--
