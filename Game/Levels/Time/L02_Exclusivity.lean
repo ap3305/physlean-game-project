@@ -7,7 +7,7 @@ Level 2
 
 Title "Exclusivity"
 
-Introduction ""
+Introduction "Another way we can deal with if statements is using `split_ifs`, this is especially useful when we don't have a value to pass through the if statement."
 
 open MyTime MyTime.TimeCharacter
 
@@ -18,8 +18,9 @@ Statement (t : MyTime) (h: ¬(t.timeCharacter = past)) (g: ¬(t.timeCharacter = 
   Branch
     rw [timeCharacter] at g
     split_ifs at g
+    Hint "Normally, `simp` would solve this goal, but since it's disabled we have to manually identify it as a `contradiction`."
     contradiction
-    Hint "Good job! As you're tackling this second goal do you think there's a way you could've solved both goals at the same time? It might be useful to know that $*$ means \"all\" in Lean"
+    Hint "Good job! As you're tackling this second goal think about if there's a way you could've solved both goals at the same time? It might be useful to know that $*$ means \"all\" in Lean"
     rw [timeCharacter] at h
     split_ifs at h
     contradiction

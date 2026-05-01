@@ -7,7 +7,7 @@ Level 7
 
 Title "vector_add_smul"
 
-Introduction ""
+Introduction "So far we've automated the first step in each subgoal, now let's use `ring` to automate the second."
 
 open MySpace
 

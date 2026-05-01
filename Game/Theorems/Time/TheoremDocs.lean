@@ -14,7 +14,7 @@ Be warned, `split_ifs` may create hypotheses which are inaccessible that you wou
 TacticDoc split_ifs
 
 /--
-`contradiction` will solve a goal if two hypothoseis directly contradict each other or if one hypothosis is `false`. For example `h: false` or `h: a` and `g: ¬a`.
+`contradiction` will solve a goal if two hypotheses directly contradict each other or if one hypothesis is `false`. For example `h: false` or `h: a` and `g: ¬a`.
 -/
 TacticDoc contradiction
 

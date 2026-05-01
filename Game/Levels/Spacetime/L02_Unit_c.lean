@@ -7,7 +7,9 @@ Level 2
 
 Title "causalCharacter"
 
-Introduction "Assume to be 1 unit of space per unit of time"
+Introduction "You might recognise some of these next few levels from a previous world. Hmmm, probably just a coincidence.
+
+Either way it may be helpful to know that the `causalCharacter` is based on the sign of the Minkowski product of a vector with itself. While in the real world this also has an added step to account for units, here we assume `c = 1` and everything works out great!"
 
 open MySpacetime MySpacetime.CausalCharacter
 

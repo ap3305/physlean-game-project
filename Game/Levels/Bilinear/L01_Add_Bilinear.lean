@@ -7,7 +7,12 @@ Level 1
 
 Title "add_bilinear"
 
-Introduction ""
+Introduction "In order to kick us off, we assume three properties of `MyBilinear`, our bilinear product: `bilinear_comm`, `bilinear_add`, and `bilinear_smul`. Be sure to give them a read!
+
+Additionally, we make things easier by defining some custom syntax for this operation:
+```
+notation \"≪\" u \", \" v \"≫\" => MyBilinear u v
+```"
 
 open MyBilinear
 

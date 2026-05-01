@@ -7,7 +7,7 @@ Level 2
 
 Title "vector_add_inv"
 
-Introduction ""
+Introduction "The next few levels are just applying the same concept as the first one and getting used to `MySpace`."
 
 open MySpace
 

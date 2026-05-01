@@ -9,7 +9,9 @@ Level 1
 
 Title "Minkowski Product"
 
-Introduction ""
+Introduction "Our new definition of `MyBilinear` follows the Minkowski Product which is, as you're about to see, `u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z`.
+
+To be able to apply all the things we proved in the bilinear world in this new context we first have to show that that \"axioms\" we assumed at the start of that world hold for our new definition."
 
 open MySpacetime
 

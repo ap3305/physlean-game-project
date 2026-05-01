@@ -13,4 +13,6 @@ Title "Space World"
 
 Introduction "
 Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors.
+
+In this would we prove that many of the same theorems that can be applied to real numbers are applicable to vectors made up of real numbers! Who would've thought?
 "

@@ -16,45 +16,25 @@ msgstr ""
 
 #: Game.Levels.Space.L01_Add_Indentity
 #: Game.Levels.Space.L02_Add_Inverse
-#: Game.Levels.Space.L02_Add_Inverse
-#: Game.Levels.Space.L03_Add_Comm
 #: Game.Levels.Space.L03_Add_Comm
 #: Game.Levels.Space.L04_Add_Assoc
-#: Game.Levels.Space.L04_Add_Assoc
-#: Game.Levels.Space.L05_Scalar_Identity
 #: Game.Levels.Space.L05_Scalar_Identity
 #: Game.Levels.Space.L06_Scalar_Add
 #: Game.Levels.Space.L06_Scalar_Add
 #: Game.Levels.Space.L07_Add_Scalar
-#: Game.Levels.Space.L07_Add_Scalar
 #: Game.Levels.Space.L08_Scalar_Assoc
-#: Game.Levels.Space.L08_Scalar_Assoc
-#: Game.Levels.Space.L09_Vector_Simp
-#: Game.Levels.Space.L09_Vector_Simp
-#: Game.Levels.Time.L01_Time
 #: Game.Levels.Time.L01_Time
 #: Game.Levels.Time.L02_Exclusivity
-#: Game.Levels.Time.L02_Exclusivity
-#: Game.Levels.Time.L03_Scalar_Present
-#: Game.Levels.Time.L03_Scalar_Present
-#: Game.Levels.Time
 #: Game.Levels.Bilinear.L01_Add_Bilinear
-#: Game.Levels.Bilinear.L01_Add_Bilinear
-#: Game.Levels.Bilinear.L02_Bilinear_Zero
 #: Game.Levels.Bilinear.L02_Bilinear_Zero
 #: Game.Levels.Bilinear.L03_Bilinear_Neg
 #: Game.Levels.Bilinear.L03_Bilinear_Neg
 #: Game.Levels.Bilinear.L04_Bilinear_Self
-#: Game.Levels.Bilinear.L04_Bilinear_Self
-#: Game.Levels.Bilinear
-#: Game.Levels.Spacetime.L01_Bilinear_Applicable
 #: Game.Levels.Spacetime.L01_Bilinear_Applicable
 #: Game.Levels.Spacetime.L02_Unit_c
 #: Game.Levels.Spacetime.L03_Exclusivity
 #: Game.Levels.Spacetime.L03_Exclusivity
 #: Game.Levels.Spacetime.L04_Scalar_Lightlike
-#: Game.Levels.Spacetime.L04_Scalar_Lightlike
-#: Game.Levels.Spacetime
 msgid ""
 msgstr ""
 
@@ -63,21 +43,28 @@ msgstr ""
 msgid "Among other things, §0 will expand a proof concerning a vector into that same proof for each component of that vector. Note this only gives the \"same\" proof when that is how the vector operation is defined, which is always the case in this game."
 msgstr ""
 
-#: Game
-msgid "## Welcome to [Game time]\n"
-"In this game we will work up from vectors to properties of points in spacetime, branching at at points along the way.\n"
+#. §0: `all_goals`
+#. §1: `all_goals rw [h]`
+#: Game.Levels.Space.L03_Add_Comm
+msgid "§0 goes in the same like as the tactic it's applied to, for example §1"
+msgstr ""
+
+#: Game.Levels.Bilinear.L02_Bilinear_Zero
+msgid "In this level you have two goals, after you prove the first one you will be able to use it in the second.\n"
 "\n"
-"The contents of this game follow the structure of PhysLean, a physics based Lean library which aims to be the physics counterpart of Mathlib, providing easy access to previous work and a platform to build off of, in this game you will prove some of the existing results PhysLean provides in order to hopefully create a point for you to leap off from into the PhysLean documentation to find any result you may need.\n"
-"\n"
-"To find out more about PhysLean, you can visit https://physlean.com/."
+"Or if you feel like it you could skip right to the second, whatever works."
+msgstr ""
+
+#: Game.Levels.Bilinear.L04_Bilinear_Self
+msgid "That's the Bilinear World done, short but sweet! Now you can either finish the Time World or move on to the Spacetime World if you've done that already! Exciting!"
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.Space.L03_Add_Comm
-msgid "Now try using the all_goals tactic to solve both remaining goals at once"
+#: Game.Levels.Space.L09_Vector_Simp
+msgid "And that's the end of Space World! Now you can either visit the Bilinear World to learn some new concepts or the Time World to learn some new tactics."
 msgstr ""
 
 #. §0: `norm_num`
@@ -89,6 +76,20 @@ msgstr ""
 #. §6: `≤`
 #: Game.Theorems.Time.TheoremDocs
 msgid "§0 can be thought about as a more powerful but more limited version of §1. It will solve any arithmetic expressive involving §2, §3, §4, §5, or §6."
+msgstr ""
+
+#. §0: `MyBilinear`
+#. §1: `bilinear_comm`
+#. §2: `bilinear_add`
+#. §3: `bilinear_smul`
+#. §4: ```
+#. notation \"≪\" u \", \" v \"≫\" => MyBilinear u v
+#. ```
+#: Game.Levels.Bilinear.L01_Add_Bilinear
+msgid "In order to kick us off, we assume three properties of §0, our bilinear product: §1, §2, and §3. Be sure to give them a read!\n"
+"\n"
+"Additionally, we make things easier by defining some custom syntax for this operation:\n"
+"§4"
 msgstr ""
 
 #. §0: `rfl`
@@ -105,6 +106,12 @@ msgstr ""
 msgid "causalCharacter"
 msgstr ""
 
+#. §0: `simp`
+#. §1: `change`
+#: Game.Levels.Space.L03_Add_Comm
+msgid "To speed up this process, we can use §0 to do automatically what we were using §1 to do by hand."
+msgstr ""
+
 #: Game.Levels.Time.L02_Exclusivity
 #: Game.Levels.Time.L02_Exclusivity
 msgid "Nice going, can you finish the level in just two more lines?"
@@ -112,6 +119,20 @@ msgstr ""
 
 #: Game.Levels.Bilinear.L03_Bilinear_Neg
 msgid "bilinear_neg"
+msgstr ""
+
+#. §0: `simp`
+#: Game.Levels.Space.L08_Scalar_Assoc
+msgid "You've gotten §0 back! See if you can finish this level in just three lines."
+msgstr ""
+
+#: Game
+msgid "## Welcome to PhysLean!\n"
+"In this game we will work up from vectors to spacetime, branching at points along the way.\n"
+"\n"
+"The contents of this game follow the structure of PhysLean, a physics based Lean library which aims to be the physics counterpart of Mathlib, providing easy access to previous work and a platform to build off of, in this game you will prove some of the existing results PhysLean provides in order to hopefully create a point for you to leap off from into the PhysLean documentation to find any result you may need.\n"
+"\n"
+"To find out more about PhysLean, you can visit https://physlean.com/."
 msgstr ""
 
 #. §0: `add_assoc a b c`
@@ -127,10 +148,10 @@ msgstr ""
 msgid "Scalar lightLike"
 msgstr ""
 
-#. §0: `change`
-#. §1: `rfl`
-#: Game.Theorems.Space.TheoremDocs
-msgid "§0 allows you the to \"change\" the goal into a different form, as long as the equivlence between those forms can be proved by §1."
+#. §0: `rename_i`
+#. §1: `split_ifs`
+#: Game.Theorems.Time.TheoremDocs
+msgid "§0 allows you give names to hypotheses which are normally inaccessible, such as those created by §1."
 msgstr ""
 
 #: Game.Levels.Space.L01_Add_Indentity
@@ -151,6 +172,16 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: Game.Levels.Bilinear
+msgid "Welcome to the Bilinear World! You may not know what a bilinear product is, but you're likely familiar with inner products such as the dot product, commonly used for calculating the angle between vectors. Inner products are slightly more restricted and as such, slightly more powerful but oh well.\n"
+"\n"
+"In this world we don't (yet!) assign a function to be our bilinear product, instead we assume three fundamental properties of a bilinear product (inner products require a fourth) and use these \"axioms\" to reason about the properties of bilinear products."
+msgstr ""
+
+#: Game
+msgid "This game aims to serve as an entry point into physics formalistation through the lens of PhysLean, the biggest library for physics in Lean."
 msgstr ""
 
 #: Game.Levels.Space.L08_Scalar_Assoc
@@ -198,13 +229,24 @@ msgstr ""
 msgid "Applies to subsequent tactic to every active goal. For example §0 applies §1 to every active goal."
 msgstr ""
 
-#. §0: `ring`
-#: Game.Theorems.Space.TheoremDocs
-msgid "§0 will prove any goal which relies on the properties of a ring group. The most prominent example of such a group is addition and multiplcation."
-msgstr ""
-
 #: Game.Levels.Space
 msgid "Space World"
+msgstr ""
+
+#: Game.Levels.Spacetime.L04_Scalar_Lightlike
+msgid "Wow! That's it! That's the game! As it stands at least. If you're interested in learning more about PhysLean be sure to check out the website and if you're super keen you can find out how to get involved in the project yourself at https://physlib.io/GetInvolved.html.\n"
+"\n"
+"Thank you for taking the time to play this game all the way through, I hope you had fun and have a great day!"
+msgstr ""
+
+#. §0: `split_ifs`
+#. §1: `if then else`
+#. §2: `split_ifs`
+#. §3: `rename i`
+#: Game.Theorems.Time.TheoremDocs
+msgid "§0 splits an §1 statement into a goal for each outcome.\n"
+"\n"
+"Be warned, §2 may create hypotheses which are inaccessible that you would like to use. Should this happen you should turn to §3."
 msgstr ""
 
 #. §0: `vector_add_assoc u v w`
@@ -219,6 +261,14 @@ msgid "§0 is a proof that §1 where §2 is also written as §3 in Lean.\n"
 "§4 are 3 dimensional vectors of type §5 or 4 dimensional vectors of type §6."
 msgstr ""
 
+#. §0: `MyBilinear`
+#. §1: `u.t * v.t - u.x * v.x - u.y * v.y - u.z * v.z`
+#: Game.Levels.Spacetime.L01_Bilinear_Applicable
+msgid "Our new definition of §0 follows the Minkowski Product which is, as you're about to see, §1.\n"
+"\n"
+"To be able to apply all the things we proved in the bilinear world in this new context we first have to show that that \"axioms\" we assumed at the start of that world hold for our new definition."
+msgstr ""
+
 #: Game.Levels.Space.L09_Vector_Simp
 msgid "simp_vector"
 msgstr ""
@@ -229,6 +279,13 @@ msgstr ""
 
 #: Game.Levels.Spacetime.L01_Bilinear_Applicable
 msgid "Minkowski Product"
+msgstr ""
+
+#: Game
+msgid "Game version - 1.0.0\n"
+"Credits:\n"
+"  - Joseph Tooby-Smith - Founding PhysLean and supervising this project.\n"
+"  - Alexander Pettett - Creating the game."
 msgstr ""
 
 #. §0: `MySpace`
@@ -249,10 +306,6 @@ msgstr ""
 
 #: Game.Levels.Space.L05_Scalar_Identity
 msgid "vector_smul_one"
-msgstr ""
-
-#: Game
-msgid "Game Template"
 msgstr ""
 
 #. §0: `add_zero a`
@@ -296,6 +349,21 @@ msgstr ""
 msgid "level completed! 🎉"
 msgstr ""
 
+#. §0: `split_ifs`
+#. §1: `rename_i`
+#. §2: `rename_i ha hb hc ...`
+#: Game.Levels.Time.L03_Scalar_Present
+msgid "When using §0 it creates inaccessable assumptions as I'm sure you've seen, but what if we want to access those assumptions?\n"
+"\n"
+"§1 lets us asign names to these assumptions and use them like any other. The best part is you can rename multiple at the same time! Just use §2."
+msgstr ""
+
+#: Game.Levels.Space
+msgid "Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors.\n"
+"\n"
+"In this would we prove that many of the same theorems that can be applied to real numbers are applicable to vectors made up of real numbers! Who would've thought?"
+msgstr ""
+
 #. §0: `vector_add_comm u v`
 #. §1: `u + v = v + u`
 #. §2: `u v w`
@@ -309,6 +377,10 @@ msgstr ""
 msgid "If you're stuck have a look at what you did in level 2 in the Light World."
 msgstr ""
 
+#: Game.Levels.Time
+msgid "Time World"
+msgstr ""
+
 #. §0: `vector_smul_add u v a`
 #. §1: `a • (u + v) = a • u + a • v`
 #. §2: `u v`
@@ -317,10 +389,6 @@ msgstr ""
 #. §5: `a`
 #: Game.Theorems.Space.TheoremDocs
 msgid "§0 is a proof that §1 where §2 are 3 dimensional vectors of type §3 or 4 dimensional vectors of type §4, and §5 is a real number."
-msgstr ""
-
-#: Game.Levels.Time
-msgid "Time World"
 msgstr ""
 
 #: Game.Levels.Time.L02_Exclusivity
@@ -358,20 +426,69 @@ msgid "§0 is a type that is first defined as taking in two arguments of type §
 "In both instances §5 can either be written as §6 or §7."
 msgstr ""
 
-#: Game.Levels.Spacetime.L02_Unit_c
-msgid "Assume to be 1 unit of space per unit of time"
+#. §0: `simp_vector`
+#. §1: `simp`
+#. §2: `MySpace`
+#. §3: `+`
+#. §4: `•`
+#. §5: ```
+#. macro \"simp_vector\" loc:(Lean.Parser.Tactic.location)? : tactic => `(tactic| simp only [
+#.   vector_add_zero, vector_add_inv, vector_add_comm, vector_add_assoc,
+#.   vector_smul_one, vector_smul_add, ← vector_add_smul, vector_smul_assoc,
+#. ] $(loc)? <;> ring <;> simp only [vector_add_comm]
+#. )
+#. ```
+#: Game.Levels.Space.L09_Vector_Simp
+msgid "Let's put everything we just proved into one place. §0 is a macro which uses §1 combined with the theorems we just proved to solve any goal involving §2, §3, and §4. Isn't that neat.\n"
+"\n"
+"This homegrown tactic is defined as such:\n"
+"§5\n"
+"There's a little bit of syntactical soup involved but isn't that neat?"
 msgstr ""
 
 #: Game.Levels.Spacetime
 msgid "Minkowski Spacetime"
 msgstr ""
 
+#. §0: `split_ifs`
+#: Game.Levels.Time.L02_Exclusivity
+msgid "Another way we can deal with if statements is using §0, this is especially useful when we don't have a value to pass through the if statement."
+msgstr ""
+
 #: Game.Levels.Space.L03_Add_Comm
 msgid "vector_add_comm"
 msgstr ""
 
+#. §0: `rw`
+#. §1: `a - 2b`
+#. §2: `h`
+#. §3: `a - 2b = b`
+#. §4: `rw [h]`
+#. §5: `a - 2b`
+#. §6: `b`
+#. §7: `repeat rw [h]`
+#. §8: `h`
+#. §9: `a - 2 * (a - 2 * (a - 2b))`
+#. §10: `b`
+#. §11: `nth_rewrite n [h]`
+#. §12: `h`
+#. §13: `rw [h] at g`
+#. §14: `rw [h]`
+#. §15: `g`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 or \"rewrite\" allows you to substitute terms. If you have a goal with the term §1 and a theorem or assumption §2 that §3 then §4 will change every instance of §5 into just §6.\n"
+"- §7 will keep rewriting until there is nothing matching §8. §9 will turn into just §10.\n"
+"- §11 will only rewrite the nth instance of §12 in your goal.\n"
+"- §13 will apply §14 to the hypothesis §15."
+msgstr ""
+
 #: Game.Levels.Space.L07_Add_Scalar
 msgid "vector_add_smul"
+msgstr ""
+
+#. §0: `ring`
+#: Game.Levels.Space.L07_Add_Scalar
+msgid "So far we've automated the first step in each subgoal, now let's use §0 to automate the second."
 msgstr ""
 
 #. §0: `vector_add_zero v`
@@ -404,27 +521,13 @@ msgid "§0 is a proof that §1.\n"
 "§2 is a 3 dimensional vector of type §3 or a 4 dimensional vector of type §4, and §5 are real numbers."
 msgstr ""
 
-#. §0: `rw`
-#. §1: `a - 2b`
-#. §2: `h`
-#. §3: `a - 2b = b`
-#. §4: `rw [h]`
-#. §5: `a - 2b`
-#. §6: `b`
-#. §7: `repeat rw [h]`
-#. §8: `h`
-#. §9: `a - 2 * (a - 2 * (a - 2b))`
-#. §10: `b`
-#. §11: `nth_rewrite n [h]`
-#. §12: `h`
-#. §13: `rw [h] at g`
-#. §14: `rw [h]`
-#. §15: `g`
-#: Game.Theorems.Space.TheoremDocs
-msgid "§0 or \"rewrite\" allows you to substitute terms. If you have a goal with the term §1 and a theorem or assumption §2 that §3 then §4 will change every instance of §5 into just §6.\n"
-"- §7 will keep rewriting until there is nothing matching §8. §9 will turn into just §10.\n"
-"- §11 will only rewrite the nth instance of §12 in your goal.\n"
-"- §13 will apply §14 to the hypothosis §15."
+#: Game.Levels.Space.L05_Scalar_Identity
+msgid "It might be useful to check back on earlier levels if you've forgotten how to use change."
+msgstr ""
+
+#. §0: `all_goals`
+#: Game.Levels.Space.L03_Add_Comm
+msgid "We can also use §0 before another tactic to solve both remaining goals at once."
 msgstr ""
 
 #. §0: `MySpace`
@@ -440,25 +543,62 @@ msgid "In this world we will construct a vector space of 3 dimensional vectors, 
 "To begin with we establish §0, with ℝ components of §1, §2, and §3. We can prove all of the results we need by using §4 to break down §5 vectors into §6 and use theorems we already know about real numbers."
 msgstr ""
 
-#: Game
-msgid "You should use this game as a template for your own game and add your own levels."
+#. §0: `causalCharacter`
+#. §1: `c = 1`
+#: Game.Levels.Spacetime.L02_Unit_c
+msgid "You might recognise some of these next few levels from a previous world. Hmmm, probably just a coincidence.\n"
+"\n"
+"Either way it may be helpful to know that the §0 is based on the sign of the Minkowski product of a vector with itself. While in the real world this also has an added step to account for units, here we assume §1 and everything works out great!"
 msgstr ""
 
-#: Game
-msgid "Here you can put additional information about the game. It is accessible\n"
-"from the starting through the drop-down menu.\n"
+#. §0: `change`
+#. §1: `rfl`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 allows you the to \"change\" the goal into a different form, as long as the equivalence between those forms can be proved by §1."
+msgstr ""
+
+#. §0: `MySpace`
+#. §1: `MyTime`
+#. §2: `MySpacetime`
+#. §3: `simp_vector`
+#. §4: `MyTime`
+#. §5: `timeCharacter`
+#. §6: `MySpacetime`
+#. §7: `causalCharacter`
+#: Game.Levels.Spacetime
+msgid "Welcome to the Spacetime World or Minkowski Spacetime if you're getting into the physics mood! The last one currently available in the game. Here we combine §0 and §1 into the four dimensional vector §2.\n"
 "\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"You might be thinking that since this is a whole new type you're have to prove all the theorems from Space World again. But worry not, we've done it for you, including porting over §3.\n"
 "\n"
-"Use **markdown**."
+"Just like how §4 carries a §5, §6 carries a §7 but we'll see that later. Firstly we'll give bilinear products their rightful place in spacetime by defining a Minkowski Product, if you're interested in learning about why Minkowski keeps popping up don't be afraid to look him up! Pretty interesting guy."
+msgstr ""
+
+#: Game.Levels.Bilinear.L02_Bilinear_Zero
+msgid "It may be useful to make sure you're confident with how nth_rw works. If you're not sure check the documentation for rw."
 msgstr ""
 
 #: Game.Levels.Space.L02_Add_Inverse
 msgid "vector_add_inv"
 msgstr ""
 
-#: Game.Levels.Bilinear.L02_Bilinear_Zero
-msgid "It may be useful to make sure you're confident with how nth_rw works. If you're not sure check the documentation for rw."
+#. §0: `simp`
+#: Game.Levels.Space.L05_Scalar_Identity
+msgid "Now we're adding scalar multiplication into the mix, see if you can solve this one without using §0."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `all_goals`
+#: Game.Levels.Space.L04_Add_Assoc
+msgid "Try applying what we just learn about §0 and §1 to this level."
+msgstr ""
+
+#. §0: `timeCharacter`
+#. §1: `if then else`
+#. §2: `timeCharacter`
+#: Game.Levels.Time
+msgid "Welcome to the Time World! Here we establish time as a one dimensional vector that carries a §0 representing the past, present, or future.\n"
+"\n"
+"The main focus in this world is on the structure of the §1 statement contained within this mysterious §2."
 msgstr ""
 
 #. §0: `vector_add_smul u a b`
@@ -504,10 +644,40 @@ msgid "§0 is a type representing a 1 dimension vector.\n"
 "- §20 holds a value of §21, §22, or §23 depending on whether §24 is negative, zero, or positive respectively."
 msgstr ""
 
-#: Game.Levels.Space
-msgid "Welcome to the Space World! Here we will lay the foundations for working with 3 dimensional vectors."
+#: Game.Levels.Time.L03_Scalar_Present
+msgid "Aaaaaand that's time! Or at least that's the Time World done. Time to move on to the next one!"
+msgstr ""
+
+#. §0: `contradiction`
+#. §1: `false`
+#. §2: `h: false`
+#. §3: `h: a`
+#. §4: `g: ¬a`
+#: Game.Theorems.Time.TheoremDocs
+msgid "§0 will solve a goal if two hypotheses directly contradict each other or if one hypothesis is §1. For example §2 or §3 and §4."
+msgstr ""
+
+#. §0: `MySpace`
+#: Game.Levels.Space.L02_Add_Inverse
+msgid "The next few levels are just applying the same concept as the first one and getting used to §0."
+msgstr ""
+
+#. §0: `ring`
+#: Game.Theorems.Space.TheoremDocs
+msgid "§0 will prove any goal which relies on the properties of a ring group. The most prominent example of such a group is addition and multiplication."
 msgstr ""
 
 #: Game
+#: Game
 msgid "PhysLean Game"
+msgstr ""
+
+#. §0: `MyTime`
+#. §1: `timeCharacter`
+#. §2: `rw[timeCharacter]`
+#. §3: `norm_num`
+#. §4: `ring`
+#: Game.Levels.Time.L01_Time
+msgid "Vectors of type §0 not only hold their value but also a §1. We can access this value using §2 and then collapsing the if statement involved.\n"
+"One way to do this is using §3, you can think of it as a more powerful version but more specific version of §4."
 msgstr ""

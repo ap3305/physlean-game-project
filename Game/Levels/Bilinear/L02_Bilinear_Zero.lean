@@ -7,7 +7,9 @@ Level 2
 
 Title "bilinear_zero"
 
-Introduction ""
+Introduction "In this level you have two goals, after you prove the first one you will be able to use it in the second.
+
+Or if you feel like it you could skip right to the second, whatever works."
 
 open MyBilinear
 

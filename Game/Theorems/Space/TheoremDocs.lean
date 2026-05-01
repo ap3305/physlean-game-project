@@ -5,7 +5,7 @@ import Game.Theorems.Space.Theorems
 `rw` or "rewrite" allows you to substitute terms. If you have a goal with the term `a - 2b` and a theorem or assumption `h` that `a - 2b = b` then `rw [h]` will change every instance of `a - 2b` into just `b`.
 - `repeat rw [h]` will keep rewriting until there is nothing matching `h`. `a - 2 * (a - 2 * (a - 2b))` will turn into just `b`.
 - `nth_rewrite n [h]` will only rewrite the nth instance of `h` in your goal.
-- `rw [h] at g` will apply `rw [h]` to the hypothosis `g`.
+- `rw [h] at g` will apply `rw [h]` to the hypothesis `g`.
 -/
 TacticDoc rw
 
@@ -60,7 +60,7 @@ Among other things, `ext` will expand a proof concerning a vector into that same
 TacticDoc ext
 
 /--
-`change` allows you the to "change" the goal into a different form, as long as the equivlence between those forms can be proved by `rfl`.
+`change` allows you the to "change" the goal into a different form, as long as the equivalence between those forms can be proved by `rfl`.
 -/
 TacticDoc change
 
@@ -70,7 +70,7 @@ TacticDoc change
 TacticDoc simp
 
 /--
-`ring` will prove any goal which relies on the properties of a ring group. The most prominent example of such a group is addition and multiplcation.
+`ring` will prove any goal which relies on the properties of a ring group. The most prominent example of such a group is addition and multiplication.
 -/
 TacticDoc ring
 

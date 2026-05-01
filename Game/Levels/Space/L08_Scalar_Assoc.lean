@@ -7,7 +7,7 @@ Level 8
 
 Title "vector_smul_assoc"
 
-Introduction ""
+Introduction "You've gotten `simp` back! See if you can finish this level in just three lines."
 
 open MySpace
 

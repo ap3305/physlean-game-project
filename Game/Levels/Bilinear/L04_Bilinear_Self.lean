@@ -16,6 +16,6 @@ Statement (u v : MySpace) : ≪u + v, u + v≫ = ≪u, u≫ + 2 * ≪u, v≫ + �
   nth_rewrite 2 [bilinear_comm]
   ring
 
-Conclusion ""
+Conclusion "That's the Bilinear World done, short but sweet! Now you can either finish the Time World or move on to the Spacetime World if you've done that already! Exciting!"
 
 NewTheorem MyBilinear.bilinear_neg

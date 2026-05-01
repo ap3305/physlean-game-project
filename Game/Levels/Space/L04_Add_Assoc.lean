@@ -7,7 +7,7 @@ Level 4
 
 Title "vector_add_assoc"
 
-Introduction ""
+Introduction "Try applying what we just learn about `simp` and `all_goals` to this level."
 
 open MySpace
 
@@ -20,3 +20,4 @@ Statement (u v w : MySpace) : u + (v + w) = (u + v) + w := by
 Conclusion ""
 
 NewTheorem MySpace.vector_add_comm
+DisabledTactic change

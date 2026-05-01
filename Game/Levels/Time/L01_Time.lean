@@ -7,7 +7,8 @@ Level 1
 
 Title "MyTime"
 
-Introduction ""
+Introduction "Vectors of type `MyTime` not only hold their value but also a `timeCharacter`. We can access this value using `rw[timeCharacter]` and then collapsing the if statement involved.
+One way to do this is using `norm_num`, you can think of it as a more powerful version but more specific version of `ring`."
 
 open MyTime MyTime.TimeCharacter
 
